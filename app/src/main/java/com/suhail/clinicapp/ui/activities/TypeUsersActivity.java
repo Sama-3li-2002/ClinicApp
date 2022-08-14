@@ -1,6 +1,8 @@
 package com.suhail.clinicapp.ui.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -18,5 +20,12 @@ ImageView img1;
         setContentView(R.layout.activity_type_users);
         Toast.makeText(TypeUsersActivity.this ,"x" ,Toast.LENGTH_LONG).show();
         img1 =findViewById(R.id.iv_patent);
+        img1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TypeUsersActivity.this,LoginScreen.class);
+                startActivity(intent);
+            }
+        });
     }
 }
