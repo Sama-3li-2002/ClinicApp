@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_clinic"
+    app:cardElevation="10dp"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        >
+
+        <ImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/iv_clinic_image"
+            android:layout_width="102dp"
+            android:layout_height="104dp"
+            android:padding="5dp"
+            android:layout_marginVertical="13dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/custom_clinic_image_shape"
+            android:scaleType="fitCenter"
+            android:src="@drawable/clinic_profile" />
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/iv_clinic_image"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tv_clinic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1C95C0"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_toEndOf="@+id/iv_clinic_image"
+            android:text="clinic name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="38dp"/>
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/iv_clinic_image"
+            app:layout_constraintTop_toBottomOf="@id/tv_clinic_name"
+            android:id="@+id/tv_clinc_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clinic address"
+            android:textColor="#252829"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_toEndOf="@id/iv_clinic_image"
+            android:layout_below="@id/tv_clinic_name"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
