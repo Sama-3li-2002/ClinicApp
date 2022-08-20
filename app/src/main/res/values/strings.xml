@@ -23,4 +23,9 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="lbl_booking">Booking</string>
+    <string name="txt_btn_evening">Evening</string>
+    <string name="txt_btn_morning">Morning</string>
+    <string name="lbl_booking_date">Booking date</string>
+    <string name="txt_btn_ok">ok</string>
 </resources>

@@ -13,25 +13,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClinicApp"
         tools:targetApi="31">
-        <activity
-            android:name=".ui.login.DoctorDetailsScreen"
-            android:exported="false"
-            android:label="@string/title_activity_doctor_details_screen" />
-        <activity
-            android:name=".OtpCode"
-            android:exported="false" />
+        <activity android:name=".ui.activities.OtpCode"/>
+        <activity android:name=".ui.activities.LoginScreen"/>
+        <activity android:name=".ui.activities.DoctorDetailsScreen"/>
+        <activity android:name=".ForgetPasswordScreen"/>
+        <activity android:name=".ui.activities.CreateAccount"/>
         <activity
             android:name=".ui.activities.TypeUsersActivity"
             android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
     </application>
 
 </manifest>
