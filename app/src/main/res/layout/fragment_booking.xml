@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.androdi.com/apk/res-auto"
+    tools:context=".ui.fragments.BookingFragment">
+
+    <ImageView
+        android:layout_width="11dp"
+        android:layout_height="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="19dp"
+        android:layout_weight="1"
+        android:src="@drawable/backicon" />
+
+    <TextView
+        android:id="@+id/tvdimo"
+        android:layout_width="144dp"
+        android:layout_height="24dp"
+
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_medium"
+        android:text="CONSULATION"
+        android:textSize="18sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_consulting"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape"
+        android:src="@drawable/icc" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card"
+        android:layout_width="323dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/tvdimo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:outlineAmbientShadowColor="@color/black"
+
+        app:cardCornerRadius="8dp">
+
+        <Button
+            android:id="@+id/bv_evning"
+            android:layout_width="135dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#1C95C0"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Evening" />
+
+        <Button
+            android:id="@+id/bv_morning"
+            android:layout_width="135dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#161C95C0"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Morning"
+            android:textColor="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="343dp"
+        android:layout_height="219dp"
+        android:layout_below="@+id/cv_card"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card2"
+        android:layout_width="343dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/calendarView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+
+      >
+        <ImageView
+            android:layout_width="338dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bacground2"
+            android:layout_height="120dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bv_1"
+                android:layout_width="73dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="#FB83A0"
+                android:fontFamily="@font/roboto_medium"
+                android:text="12:30PM"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/bv_2"
+                android:layout_width="73dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="#1C95C0"
+                android:fontFamily="@font/roboto_medium"
+                android:text="12:30PM"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/bv_3"
+                android:layout_width="73dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="#83DBFB"
+                android:fontFamily="@font/roboto_medium"
+                android:text="12:30PM"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/bv_4"
+                android:layout_width="73dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="#1C95C0"
+                android:fontFamily="@font/roboto_medium"
+                android:text="12:30PM"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:outlineSpotShadowColor="@color/black"
+
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bv_5"
+                android:layout_width="73dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="#FB83A0"
+                android:fontFamily="@font/roboto_medium"
+                android:text="12:30PM"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/bv_6"
+                android:layout_width="73dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="#1C95C0"
+                android:fontFamily="@font/roboto_medium"
+                android:text="12:30PM"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/bv_7"
+                android:layout_width="73dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="#1C95C0"
+                android:fontFamily="@font/roboto_medium"
+                android:text="12:30PM"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+<TextView
+    android:id="@+id/tv_dimoo"
+    android:layout_width="106dp"
+    android:layout_below="@+id/cv_card2"
+android:textSize="18dp"
+    android:text="Booking date"
+    android:fontFamily="@font/roboto_medium"
+    android:layout_margin="13dp"
+    android:layout_height="24dp"/>
+    <FrameLayout
+        android:id="@+id/frlayout"
+        android:paddingHorizontal="5dp"
+        android:layout_below="@+id/tv_dimoo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="343dp"
+        android:layout_height="84dp"
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/cv_appoitment"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#E8F2F5"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="100dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_date_int"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1C95C0"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="24"/>
+                <TextView
+                    android:id="@+id/tv_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9BABB1"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Wendesdey"/>
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9BABB1"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Wed 24 Aug , 1:30PM"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_doctor_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="79dp"
+            android:layout_height="107dp"
+            app:riv_corner_radius="8dp"
+            android:layout_marginStart="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/detialslogo"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/frlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#1C95C0"
+        android:text="OK"
+        android:textColor="#F8F8F8"
+        android:textSize="22sp" />
+</RelativeLayout>
