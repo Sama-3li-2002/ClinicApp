@@ -16,7 +16,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC4ku_awlj3xI5T9P9Bkt3I5vUDChsK70s" />
+            android:value="{$MAPS_API_KEY}" />
 
         <activity android:name=".ui.activities.OtpCode"/>
         <activity android:name=".ui.activities.LoginScreen"/>
