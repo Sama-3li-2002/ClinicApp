@@ -37,4 +37,9 @@
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:background">@drawable/shape_btn_time_clicked</item>
     </style>
+    <style name="style_label_text">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#1C95C0</item>
+    </style>
 </resources>

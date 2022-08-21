@@ -24,13 +24,13 @@
             android:text="PROFILE"
             android:layout_alignParentStart="true"
             />
+
         <ImageView
-            android:id="@+id/iv_settings"
+            android:id="@+id/btn_settings"
             android:layout_width="27dp"
             android:layout_height="27dp"
-            android:src="@drawable/setting_icon"
             android:layout_alignParentEnd="true"
-            />
+            android:src="@drawable/setting_icon" />
     </RelativeLayout>
 <!---->
     <RelativeLayout

@@ -87,13 +87,13 @@
                 android:inputType="numberPassword" />
 
             <TextView
+                android:id="@+id/btn_forget_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_marginRight="10dp"
                 android:fontFamily="@font/roboto_medium"
                 android:gravity="right"
-
                 android:text="Forget Paassword?"
                 android:textSize="15sp" />
 
@@ -109,13 +109,13 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/tv_signin"
+                android:id="@+id/tv_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20sp"
                 android:fontFamily="@font/roboto_medium"
                 android:gravity="center"
-                android:text="SIGNIN"
+                android:text="SIGNUP"
                 android:textColor="@color/black"
                 android:textSize="10sp" />
         </LinearLayout>

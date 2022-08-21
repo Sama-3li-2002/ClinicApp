@@ -4,24 +4,42 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.suhail.clinicapp.MainActivity;
 import com.suhail.clinicapp.R;
+import com.suhail.clinicapp.databinding.ActivityLoginScreenBinding;
 
 public class LoginScreen extends AppCompatActivity {
-    TextView clicksignin ;
+    ActivityLoginScreenBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_screen);
-        clicksignin =findViewById(R.id.tv_signin);
-        clicksignin.setOnClickListener(new View.OnClickListener() {
+        binding=ActivityLoginScreenBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        binding.btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-               Intent intent = new Intent(LoginScreen.this,CreateAccount.class);
-               startActivity(intent);
+            public void onClick(View v) {
+                startActivity(new Intent(LoginScreen.this, MainActivity.class));
             }
         });
+
+        binding.tvSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginScreen.this,CreateAccount.class));
+            }
+        });
+
+        binding.btnForgetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginScreen.this,ForgetPasswordScreen.class));
+            }
+        });
+
     }
 }

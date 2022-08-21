@@ -32,4 +32,10 @@
     <string name="lbl_time">TIME</string>
     <string name="lbl_distance">DISTANCE</string>
     <string name="lbl_method">METHOD</string>
+    <string name="lbl_settings">SETTINGS</string>
+    <string name="lbl_language">Language</string>
+    <string name="lbl_english">English (United Kingdom)</string>
+    <string name="lbl_arabic">Arabic (Saudi Arabia)</string>
+    <string name="lbl_logout">Log Out</string>
+    <string name="txt_logout">Log Out</string>
 </resources>

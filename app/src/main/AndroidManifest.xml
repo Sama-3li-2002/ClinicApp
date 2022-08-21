@@ -21,21 +21,21 @@
         <activity android:name=".ui.activities.OtpCode"/>
         <activity android:name=".ui.activities.LoginScreen"/>
         <activity android:name=".ui.activities.DoctorDetailsScreen"/>
-        <activity android:name=".ForgetPasswordScreen"/>
+        <activity android:name=".ui.activities.ForgetPasswordScreen"/>
         <activity android:name=".ui.activities.CreateAccount"/>
         <activity
             android:name=".ui.activities.TypeUsersActivity"
             android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+
         </activity>
     </application>
 

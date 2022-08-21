@@ -8,11 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.suhail.clinicapp.MainActivity;
 import com.suhail.clinicapp.R;
 import com.suhail.clinicapp.databinding.FragmentProfileBinding;
 
 
 public class ProfileFragment extends Fragment {
+    MainActivity activity;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -21,12 +23,19 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        activity= (MainActivity) getActivity();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         FragmentProfileBinding binding=FragmentProfileBinding.inflate(getLayoutInflater());
+        binding.btnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activity.navController.navigate(R.id.nav_settings);
+            }
+        });
             return binding.getRoot();
     }
 }
