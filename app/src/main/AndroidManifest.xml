@@ -13,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClinicApp"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC4ku_awlj3xI5T9P9Bkt3I5vUDChsK70s" />
+
         <activity android:name=".ui.activities.OtpCode"/>
         <activity android:name=".ui.activities.LoginScreen"/>
         <activity android:name=".ui.activities.DoctorDetailsScreen"/>
