@@ -86,6 +86,7 @@
               android:layout_marginHorizontal="15dp"
               android:layout_marginTop="10dp">
               <CalendarView
+                  android:id="@+id/calendar"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   android:dateTextAppearance="@style/CalenderViewDateCustomText"
@@ -120,31 +121,58 @@
                   android:layout_marginVertical="26dp"
                   android:layout_marginHorizontal="12dp"
                   >
-                <TableRow android:gravity="center_horizontal">
-                    <androidx.appcompat.widget.AppCompatButton
-                        style="@style/style_btn_time_reserved"
-                        android:text="9:00PM"
-                        android:layout_marginEnd="10dp"
-                        />
-                    <androidx.appcompat.widget.AppCompatButton
-                        style="@style/style_btn_time_unreserved"
-                        android:text="9:00PM"
-                        android:layout_marginEnd="10dp"/>
-                    <androidx.appcompat.widget.AppCompatButton
-                        style="@style/style_btn_time_clicked"
-                        android:text="9:00PM"/>
-                </TableRow>
+                  <TableRow android:gravity="center_horizontal">
+                      <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_pm1"
+                          style="@style/style_btn_time_reserved"
+                          android:text="8:30PM"
+                          android:layout_marginEnd="10dp"
+                          />
+                      <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_pm2"
+                          style="@style/style_btn_time_unreserved"
+                          android:text="9:00PM"
+                          android:layout_marginEnd="10dp"/>
+                      <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_pm3"
+                          style="@style/style_btn_time_clicked"
+                          android:text="9:30PM"/>
+                  </TableRow>
                   <TableRow android:gravity="center_horizontal"
                       android:layout_marginTop="10dp">
                       <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_pm4"
                           style="@style/style_btn_time_unreserved"
-                          android:text="9:00PM"
+                          android:text="10:00PM"
                           android:layout_marginEnd="10dp"
                           />
 
                       <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_pm5"
                           style="@style/style_btn_time_reserved"
-                          android:text="9:00PM"/>
+                          android:text="10:30PM"
+                          android:layout_marginEnd="10dp"/>
+
+                      <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_pm6"
+                          style="@style/style_btn_time_reserved"
+                          android:text="11:00PM"/>
+                  </TableRow>
+                  <TableRow android:gravity="center_horizontal"
+                      android:layout_marginTop="10dp">
+                      <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_pm7"
+                          style="@style/style_btn_time_unreserved"
+                          android:text="11:30PM"
+                          android:layout_marginEnd="10dp"
+                          />
+
+                      <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_pm8"
+                          style="@style/style_btn_time_reserved"
+                          android:text="12:00PM"
+                          android:layout_marginEnd="10dp"/>
+
                   </TableRow>
               </TableLayout>
           </androidx.cardview.widget.CardView>
@@ -174,30 +202,58 @@
                   >
                   <TableRow android:gravity="center_horizontal">
                       <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_am1"
                           style="@style/style_btn_time_reserved"
-                          android:text="9:00AM"
+                          android:text="8:30AM"
                           android:layout_marginEnd="10dp"
                           />
                       <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_am2"
                           style="@style/style_btn_time_unreserved"
                           android:text="9:00AM"
                           android:layout_marginEnd="10dp"/>
                       <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_am3"
                           style="@style/style_btn_time_clicked"
-                          android:text="9:00AM"/>
+                          android:text="9:30AM"/>
                   </TableRow>
                   <TableRow android:gravity="center_horizontal"
                       android:layout_marginTop="10dp">
                       <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_am4"
                           style="@style/style_btn_time_unreserved"
-                          android:text="9:00AM"
+                          android:text="10:00AM"
                           android:layout_marginEnd="10dp"
                           />
 
                       <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_am5"
                           style="@style/style_btn_time_reserved"
-                          android:text="9:00AM"/>
+                          android:text="10:30AM"
+                          android:layout_marginEnd="10dp"/>
+
+                      <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_am6"
+                          style="@style/style_btn_time_reserved"
+                          android:text="11:00AM"/>
                   </TableRow>
+                  <TableRow android:gravity="center_horizontal"
+                      android:layout_marginTop="10dp">
+                      <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_am7"
+                          style="@style/style_btn_time_unreserved"
+                          android:text="11:30AM"
+                          android:layout_marginEnd="10dp"
+                          />
+
+                      <androidx.appcompat.widget.AppCompatButton
+                          android:id="@+id/btn_time_am8"
+                          style="@style/style_btn_time_reserved"
+                          android:text="12:00AM"
+                          android:layout_marginEnd="10dp"/>
+                      
+                  </TableRow>
+
               </TableLayout>
           </androidx.cardview.widget.CardView>
 
@@ -283,6 +339,7 @@
 
           </FrameLayout>
           <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/btn_ok"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_gravity="center_horizontal"
