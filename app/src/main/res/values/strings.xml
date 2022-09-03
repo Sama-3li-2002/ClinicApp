@@ -49,6 +49,8 @@
     <string name="txt_my_appointments">MY APPOINTMENTS</string>
     <string name="txt_empty_data">There Are No Details For This Date \n Try Again Without Time</string>
 
+<!--       view all clinics fragment-->
+    <string name="txt_CLINICS">CLINICS</string>
 
     <string name="lbl_booking_date">Booking date</string>
     <string name="txt_btn_ok">ok</string>

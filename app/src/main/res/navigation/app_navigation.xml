@@ -46,8 +46,13 @@
         tools:layout="@layout/fragment_settings"/>
 
     <fragment android:id="@+id/nav_empty_data"
-        android:name="com.suhail.clinicapp.ui.fragments.empty_appointment"
+        android:name="com.suhail.clinicapp.ui.fragments.EmptyAppointmentFragment"
         android:label="empty_data"
         tools:layout="@layout/fragment_empty_appointment"/>
+
+    <fragment android:id="@+id/nav_all_clinic"
+        android:name="com.suhail.clinicapp.ui.fragments.AllClinicsFragment"
+        android:label="view all clinic"
+        tools:layout="@layout/fragment_all_clinics"/>
 
 </navigation>
