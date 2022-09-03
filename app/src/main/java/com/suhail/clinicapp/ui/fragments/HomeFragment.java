@@ -54,6 +54,11 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {activity.navController.navigate(R.id.nav_notifications);}
         });
 
+        binding.tvViewAllClinic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {activity.navController.navigate(R.id.nav_all_clinic);}
+        });
+
         List<Clinic> clinics = new ArrayList<>();
         clinics.add(new Clinic(R.drawable.clinic_profile, "Heart Clinic", "Gaza,First Street"));
         clinics.add(new Clinic(R.drawable.clinic_profile, "Dental Clinic", "Gaza,First Street"));
