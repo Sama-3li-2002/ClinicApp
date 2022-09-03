@@ -49,7 +49,6 @@
             android:id="@+id/btn_english"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:orientation="vertical">
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -70,16 +69,17 @@
                     android:layout_marginStart="12dp"
                     android:layout_toEndOf="@id/iv_english"
                     android:background="#E7F4F9" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@id/view_line"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="9dp"
+                    android:layout_toEndOf="@id/view_line"
                     android:fontFamily="@font/roboto_medium"
-                    android:textSize="10sp"
+                    android:text="@string/lbl_english"
                     android:textColor="#091A20"
-                    android:text="@string/lbl_english"/>
+                    android:textSize="10sp" />
 
                 <ImageView
                     android:id="@+id/iv_english_check"

@@ -10,9 +10,7 @@
         android:layout_height="12dp"
         android:layout_alignParentStart="true"
         android:layout_gravity="center"
-
         android:layout_marginStart="19dp"
-
         android:layout_marginTop="22dp"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="19dp"
@@ -99,7 +97,7 @@
 
     <TextView
         android:layout_width="169dp"
-android:id="@+id/tv_dimo"
+        android:id="@+id/tv_dimo"
         android:layout_height="20dp"
         android:layout_below="@id/cv_card1"
         android:layout_marginStart="10dp"

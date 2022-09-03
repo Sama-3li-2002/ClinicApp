@@ -54,4 +54,10 @@ dependencies {
     // map
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
     implementation 'com.google.android.gms:play-services-location:20.0.0'
+
+    //DotsIndicator in viewpager
+    implementation("com.tbuonomo:dotsindicator:4.3")
+
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+
 }

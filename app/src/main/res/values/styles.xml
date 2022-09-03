@@ -55,4 +55,5 @@
     <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
         <item name="android:textColor">#1C95C0</item>
     </style>
+
 </resources>

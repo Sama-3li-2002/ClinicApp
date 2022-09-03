@@ -40,6 +40,7 @@ public class ClinicRvAdapter extends RecyclerView.Adapter<ClinicRvAdapter.Clinic
         binding.ivClinicImage.setImageResource(clinic.getImage());
         binding.tvClinicName.setText(clinic.getName());
         binding.tvClincAddress.setText(clinic.getAddress());
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
