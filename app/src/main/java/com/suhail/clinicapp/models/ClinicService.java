@@ -1,6 +1,8 @@
 package com.suhail.clinicapp.models;
 
-public class ClinicService {
+import java.io.Serializable;
+
+public class ClinicService implements Serializable {
     private  int image;
     private  String serviceName;
 

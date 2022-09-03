@@ -79,7 +79,8 @@
                 app:dotsSize="10dp"
                 app:dotsSpacing="2dp"
                 app:dotsStrokeColor="#1C95C0"
-                app:dotsStrokeWidth="1dp" />
+                app:dotsStrokeWidth="1dp"
+               />
 
             <TextView
                 android:id="@+id/tv_about"

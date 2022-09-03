@@ -5,7 +5,7 @@
     android:id="@+id/app_navigation"
     app:startDestination="@id/nav_home">
     <fragment android:id="@+id/nav_home"
-        android:name="com.suhail.clinicapp.ui.fragments.HomeFragment"
+        android:name="com.suhail.clinicapp.ui.fragments.HomeFragment2"
         android:label="@string/nav_home"
         tools:layout="@layout/fragment_home"/>
 
