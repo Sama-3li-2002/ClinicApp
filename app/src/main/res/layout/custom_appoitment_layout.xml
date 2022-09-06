@@ -5,14 +5,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginBottom="31dp">
 <FrameLayout
-    android:paddingHorizontal="5dp"
+    android:paddingHorizontal="@dimen/_5sdp"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
+    android:layout_height="wrap_content">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -25,8 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="84dp"
             app:cardCornerRadius="8dp"
-            app:cardBackgroundColor="#E8F2F5"
-            >
+            app:cardBackgroundColor="@color/gray2">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -36,7 +34,7 @@
                     android:id="@+id/tv_date_int"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#1C95C0"
+                    android:textColor="@color/skyBlue"
                     android:textSize="24sp"
                     android:fontFamily="@font/roboto_medium"
                     android:text="24"/>
@@ -44,7 +42,7 @@
                     android:id="@+id/tv_day"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#9BABB1"
+                    android:textColor="@color/gray3"
                     android:textSize="11sp"
                     android:fontFamily="@font/roboto_regular"
                     android:text="Wendesdey"/>
@@ -52,7 +50,7 @@
                     android:id="@+id/tv_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#9BABB1"
+                    android:textColor="@color/gray3"
                     android:textSize="11sp"
                     android:fontFamily="@font/roboto_regular"
                     android:text="Wed 24 Aug , 1:30PM"/>
@@ -73,11 +71,8 @@
                     app:riv_corner_radius="8dp"
                     android:layout_marginStart="5dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/man"
-                    />
+                    android:src="@drawable/man" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

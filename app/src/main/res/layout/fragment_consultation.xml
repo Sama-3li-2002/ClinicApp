@@ -3,202 +3,234 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/root_color"
     tools:context=".ui.fragments.ConsultationFragment">
 
-    <ImageView
-        android:layout_width="11dp"
-        android:layout_height="12dp"
-        android:layout_alignParentStart="true"
-        android:layout_gravity="center"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="19dp"
-        android:layout_weight="1"
-        android:src="@drawable/backicon" />
+    <RelativeLayout
+        android:id="@+id/rl_consultation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp">
 
-    <TextView
-        android:id="@+id/tvdimo"
-        android:layout_width="144dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="18dp"
-        android:layout_weight="1"
-        android:fontFamily="@font/roboto_medium"
-        android:text="CONSULATION"
-        android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_icon" />
 
+        <TextView
+            style="@style/screen_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_toEndOf="@id/btn_back"
+            android:text="@string/title_consultation" />
+
+        <ImageView
+            android:id="@+id/iv_notification"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/notification_alert_icon" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_below="@id/rl_consultation"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
 
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="255dp"
-        android:layout_height="135dp"
-
+        android:layout_width="@dimen/_255sdp"
+        android:layout_height="@dimen/_135sdp"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:src="@drawable/logo6" />
 
     <TextView
-        android:layout_width="60dp"
-        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/iv_logo"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:text="QUETION"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/txt_question"
         android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/tv_datetime"
-        android:layout_width="100dp"
-        android:layout_height="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/iv_logo"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         android:text="Today 11:30 AM"
+        android:textColor="@color/skyBlue" />
 
-        android:textColor="@color/skyblue" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_card1"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_below="@id/tv_datetime"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_card1"
-        android:layout_width="343dp"
-        android:layout_height="107dp"
-        android:layout_below="@id/tv_datetime"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="61dp"
+                    android:layout_height="61dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/img5" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="61dp"
-            android:layout_height="61dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/img5" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="90dp"
+                    android:background="#E3F2F8" />
 
-        <View
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="90dp"
-            android:background="#E3F2F8" />
-
-        <EditText
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:hint="Write Your Question"
-            android:textSize="10sp"
-            android:layout_marginStart="100dp" />
-    </androidx.cardview.widget.CardView>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="99dp"
+                    android:hint="@string/txt_write_question"
+                    android:textSize="10sp" />
+            </androidx.cardview.widget.CardView>
 
     <TextView
-        android:layout_width="169dp"
         android:id="@+id/tv_dimo"
+        android:layout_width="169dp"
         android:layout_height="20dp"
         android:layout_below="@id/cv_card1"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         android:fontFamily="@font/roboto_medium"
-        android:text="You Can Attach A Picture"
+        android:text="@string/txt_attach_picture"
         android:textColor="@color/black" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_card2"
-        android:layout_width="343dp"
-
-        android:layout_height="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
         android:layout_below="@id/tv_dimo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp">
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
+
         <TextView
-            android:layout_width="57dp"
-            android:text="Image.png"
-android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Image.png" />
 
-            android:layout_height="wrap_content"/>
-        <View
-            android:layout_width="34dp"
-            android:background="@color/skyblue"
-            android:layout_height="26dp"/>
-        <ImageView
-            android:layout_width="22dp"
-            android:layout_height="16dp"
-           android:layout_marginStart="5dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/msgicon" />
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:elevation="5dp">
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@color/skyBlue" />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="9dp"
+                android:src="@drawable/msgicon" />
+        </FrameLayout>
     </androidx.cardview.widget.CardView>
-    <TextView
 
+
+    <TextView
         android:layout_width="108dp"
         android:layout_height="20dp"
         android:layout_below="@id/cv_card2"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:text="Doctor's Answer"
-
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/txt_doctor_answer"
         android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/tv_datetime2"
-        android:layout_width="100dp"
-        android:layout_height="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/cv_card2"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         android:text="Today 11:30 AM"
+        android:textColor="@color/skyBlue" />
 
-        android:textColor="@color/skyblue" />
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_card3"
-        android:layout_width="343dp"
-        android:layout_height="107dp"
-        android:layout_below="@id/tv_datetime2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_card3"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_below="@id/tv_datetime2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="61dp"
-            android:layout_height="61dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/doctoricon" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="61dp"
+                    android:layout_height="61dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/doctoricon" />
 
-        <View
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="90dp"
-            android:background="#E3F2F8" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="90dp"
+                    android:background="#E3F2F8" />
 
-        <EditText
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-android:hint="Write Your Question"
-            android:textSize="10sp"
-            android:layout_marginStart="100dp" />
-    </androidx.cardview.widget.CardView>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="100dp"
+                    android:hint="@string/txt_your_answer"
+                    android:textSize="10sp" />
+            </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="22dp"
-        android:backgroundTint="#1C95C0"
-        android:text="login"
-        android:textColor="#F8F8F8"
-        android:fontFamily="@font/roboto_bold"
-        android:layout_below="@+id/cv_card3"
-        android:layout_centerHorizontal="true"
-        android:textSize="22sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_card3"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                style="@style/style_btn_clicked"
+                android:text="@string/btn_send" />
+</RelativeLayout>
+</ScrollView>
 
 </RelativeLayout>

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:layoutDirection="ltr"
     android:orientation="vertical"
+    android:background="@color/root_color"
     tools:context=".ui.activities.TypeUsersActivity">
 
     <TextView
@@ -28,9 +29,9 @@
         android:layout_below="@id/tv_title">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_patient"
@@ -43,6 +44,7 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <ImageView
                         android:id="@+id/iv_patent"
                         android:layout_width="match_parent"
@@ -59,10 +61,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Patient"
-                        android:fontFamily="@font/roboto_bold"
                         android:layout_gravity="center"
-                        android:textColor="#ffffff"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Patient"
+                        android:textColor="@color/white"
                         android:textSize="30sp" />
 
                 </FrameLayout>
@@ -96,10 +98,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Clinic Administrator"
-                        android:fontFamily="@font/roboto_bold"
                         android:layout_gravity="center"
-                        android:textColor="#ffffff"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Clinic Administrator"
+                        android:textColor="@color/white"
                         android:textSize="30sp" />
 
                 </FrameLayout>
@@ -120,7 +122,6 @@
                     android:layout_height="match_parent">
 
 
-
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
@@ -135,21 +136,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Doctors"
-                        android:fontFamily="@font/roboto_bold"
                         android:layout_gravity="center"
-                        android:textColor="#ffffff"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Doctors"
+                        android:textColor="@color/white"
                         android:textSize="30sp" />
 
                 </FrameLayout>
-
-
             </androidx.cardview.widget.CardView>
-
         </LinearLayout>
-
     </ScrollView>
-
-
 
 </RelativeLayout>

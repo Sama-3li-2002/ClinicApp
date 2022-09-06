@@ -12,6 +12,7 @@ import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,9 +78,9 @@ public class HomeFragment extends Fragment {
             }
         });
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
-        binding.rvClincs.setLayoutManager(layoutManager);
-        binding.rvClincs.setHasFixedSize(true);
-        binding.rvClincs.setAdapter(adapter);
+        binding.rvClinics.setLayoutManager(layoutManager);
+        binding.rvClinics.setHasFixedSize(true);
+        binding.rvClinics.setAdapter(adapter);
 
 
         //START view pager2 with image slider -- services

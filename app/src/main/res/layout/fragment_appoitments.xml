@@ -5,24 +5,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.fragments.AppoitmentsFragment"
-    android:background="#F5F5F5">
+    android:background="@color/root_color">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#091A20"
-        android:textSize="18sp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="My Appoitments"
-        android:layout_marginTop="70dp"
-        android:layout_marginStart="15dp"/>
+       style="@style/screen_title_style"
+        android:text="@string/title_appointments"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_15sdp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_appoitments"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="5dp"
-        android:layout_marginTop="31dp"/>
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"/>
 
 
 </LinearLayout>

@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
     xmlns:app="http://schemas.androdi.com/apk/res-auto"
     tools:context=".ui.fragments.BookingFragment">
 
@@ -56,7 +55,7 @@
         <Button
             android:id="@+id/bv_evning"
             android:layout_width="135dp"
-            android:layout_height="50dp"
+            android:layout_height="38dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="20dp"
             android:backgroundTint="#1C95C0"
@@ -66,7 +65,7 @@
         <Button
             android:id="@+id/bv_morning"
             android:layout_width="135dp"
-            android:layout_height="50dp"
+            android:layout_height="38dp"
             android:layout_gravity="center_vertical|right"
             android:layout_marginEnd="20dp"
             android:backgroundTint="#161C95C0"
@@ -80,10 +79,9 @@
         android:layout_width="343dp"
         android:layout_height="219dp"
         android:layout_below="@+id/cv_card"
-        android:background="#FFFFFF"
+
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp" />
-
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_card2"
@@ -93,14 +91,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
 
-        >
+      >
         <ImageView
-            android:layout_width="343dp"
+            android:layout_width="338dp"
             android:scaleType="centerCrop"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/calendarView"
             android:src="@drawable/bacground2"
-
             android:layout_height="120dp"/>
 
         <LinearLayout
@@ -154,10 +149,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
+            android:outlineSpotShadowColor="@color/black"
 
-            android:orientation="horizontal"
-            android:outlineSpotShadowColor="@color/black">
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/bv_5"
@@ -166,7 +161,6 @@
                 android:layout_margin="5dp"
                 android:backgroundTint="#FB83A0"
                 android:fontFamily="@font/roboto_medium"
-                android:gravity="center"
                 android:text="12:30PM"
                 android:textSize="10sp" />
 

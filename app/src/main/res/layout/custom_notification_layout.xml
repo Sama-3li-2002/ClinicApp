@@ -26,7 +26,7 @@
                 android:id="@+id/view"
                 android:layout_width="79dp"
                 android:layout_height="match_parent"
-                android:background="#1C95C0"
+                android:background="@color/skyBlue"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -52,7 +52,7 @@
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
-                android:background="#E3F2F8"
+                android:background="@color/gray2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/view"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_medium"
                     android:text="24"
-                    android:textColor="#1C95C0"
+                    android:textColor="@color/skyBlue"
                     android:textSize="24sp" />
 
                 <TextView
@@ -80,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_regular"
                     android:text="Wendesdey"
-                    android:textColor="#9BABB1"
+                    android:textColor="@color/gray3"
                     android:textSize="11sp" />
 
                 <TextView
@@ -89,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_regular"
                     android:text="Wed 24 Aug , 1:30PM"
-                    android:textColor="#9BABB1"
+                    android:textColor="@color/gray3"
                     android:textSize="11sp" />
 
             </LinearLayout>

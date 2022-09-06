@@ -58,6 +58,7 @@ dependencies {
     //DotsIndicator in viewpager
     implementation("com.tbuonomo:dotsindicator:4.3")
 
+    // intuit to design many screen size
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
 
 }

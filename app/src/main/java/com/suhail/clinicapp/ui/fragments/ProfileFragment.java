@@ -36,6 +36,8 @@ public class ProfileFragment extends Fragment {
                 activity.navController.navigate(R.id.nav_settings);
             }
         });
+
+        binding.cvProfile.setBackgroundResource(R.drawable.custom_card_shape);
             return binding.getRoot();
     }
 }

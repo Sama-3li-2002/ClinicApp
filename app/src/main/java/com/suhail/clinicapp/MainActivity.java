@@ -14,7 +14,7 @@ import com.google.android.material.navigation.NavigationBarView;
 import com.suhail.clinicapp.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-ActivityMainBinding binding;
+    ActivityMainBinding binding;
     private AppBarConfiguration configuration;
     public NavController navController;
 

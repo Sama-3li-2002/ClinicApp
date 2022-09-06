@@ -1,48 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="@color/root_color">
 
-    <LinearLayout
-        android:id="@+id/ll_appointments"
+
+    <RelativeLayout
+        android:id="@+id/rl_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_19sdp"
-        android:layout_marginTop="@dimen/_25sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:orientation="horizontal">
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp">
 
         <ImageView
-            android:layout_width="12dp"
-            android:layout_height="12dp"
-            android:layout_gravity="center"
-            android:src="@drawable/backicon" />
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_icon" />
 
         <TextView
             style="@style/screen_title_style"
             android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:text="@string/txt_home" />
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_toEndOf="@id/btn_back"
+            android:text="@string/title_home" />
 
         <ImageView
             android:id="@+id/iv_notification"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_alignParentEnd="true"
             android:src="@drawable/notification_alert_icon" />
 
-    </LinearLayout>
-
+    </RelativeLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/ll_appointments">
+        android:layout_below="@id/rl_home">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,15 +50,12 @@
 
             <TextView
                 android:id="@+id/tv_service"
+                style="@style/style_label_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/ll_appointments"
                 android:layout_marginStart="@dimen/_19sdp"
-                android:layout_marginTop="@dimen/_13sdp"
-                android:fontFamily="@font/roboto_medium"
-                android:text="@string/txt_our_service"
-                android:textColor="#1C95C0"
-                android:textSize="18dp" />
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/txt_our_service" />
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/view_pager2"
@@ -74,25 +70,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/view_pager2"
-                app:dotsColor="#1C95C0"
+                app:dotsColor="@color/skyBlue"
                 app:dotsCornerRadius="8dp"
                 app:dotsSize="10dp"
                 app:dotsSpacing="2dp"
-                app:dotsStrokeColor="#1C95C0"
-                app:dotsStrokeWidth="1dp"
-               />
+                app:dotsStrokeColor="@color/skyBlue"
+                app:dotsStrokeWidth="1dp" />
 
             <TextView
                 android:id="@+id/tv_about"
+                style="@style/style_label_text"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/_22sdp"
                 android:layout_below="@id/worm_dots_indicator"
                 android:layout_marginStart="@dimen/_19sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:fontFamily="@font/roboto_medium"
-                android:text="@string/txt_about_us"
-                android:textColor="#1C95C0"
-                android:textSize="18dp" />
+                android:text="@string/txt_about_us" />
 
             <TextView
                 android:id="@+id/tv_about_us"
@@ -100,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_about"
                 android:layout_marginStart="@dimen/_19sdp"
-                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:fontFamily="@font/roboto_regular"
                 android:text="Excepteur sint occaecat cupidatat nonsit proident,
 sunt in culpa qui officia deserunt mollit anim said
@@ -121,14 +114,12 @@ quasi architecto beatae vitaet "
 
                 <TextView
                     android:id="@+id/tv_clincs"
+                    style="@style/style_label_text"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_22sdp"
                     android:layout_below="@id/tv_about_us"
                     android:layout_weight="8"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="@string/txt_clinics"
-                    android:textColor="#1C95C0"
-                    android:textSize="18dp" />
+                    android:text="@string/txt_clinics" />
 
                 <TextView
                     android:id="@+id/tv_view_all_clinic"
@@ -140,12 +131,12 @@ quasi architecto beatae vitaet "
                     android:layout_weight="1"
                     android:fontFamily="@font/roboto_medium"
                     android:text="@string/txt_view_all"
-                    android:textColor="#DB1616"
+                    android:textColor="@color/red"
                     android:textSize="12sp" />
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_clincs"
+                android:id="@+id/rv_clinics"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@id/tv_clincs"
