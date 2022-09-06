@@ -98,7 +98,14 @@
     <string name="txt_time">TIME</string>
     <string name="txt_distance">DISTANCE</string>
     <string name="txt_method">METHOD</string>
-
+    <string name="lbl_create_account">CREATE ACCOUNT</string>
+    <string name="lbl_first_name">First Name:</string>
+    <string name="lbl_last_name">Last Name:</string>
+    <string name="lbl_email">E_mail:</string>
+    <string name="lbl_address">Address:</string>
+    <string name="lbl_phone">Phone:</string>
+    <string name="lbl_password">Password:</string>
+    <string name="txt_btn_register">Register</string>
 
 
 </resources>

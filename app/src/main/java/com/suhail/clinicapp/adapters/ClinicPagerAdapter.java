@@ -3,6 +3,7 @@ package com.suhail.clinicapp.adapters;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
@@ -19,7 +20,7 @@ public class ClinicPagerAdapter extends RecyclerView.Adapter<ClinicPagerAdapter.
     private ViewPager2 viewPager2;
 
 
-    public ClinicPagerAdapter(Context context, List<ClinicService> clinicService,ViewPager2 viewPager2) {
+    public ClinicPagerAdapter(Context context, List<ClinicService> clinicService, ViewPager2 viewPager2) {
         this.context = context;
         this.clinicService = clinicService;
         this.viewPager2 = viewPager2;
@@ -28,7 +29,7 @@ public class ClinicPagerAdapter extends RecyclerView.Adapter<ClinicPagerAdapter.
     @NonNull
     @Override
     public ClinicPagerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ClinicPagerViewHolder(CustomServiceLayoutBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false));
+        return new ClinicPagerViewHolder(CustomServiceLayoutBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
     }
 
     @Override
@@ -45,11 +46,11 @@ public class ClinicPagerAdapter extends RecyclerView.Adapter<ClinicPagerAdapter.
     }
 
 
-    public class ClinicPagerViewHolder extends RecyclerView.ViewHolder{
+    public class ClinicPagerViewHolder extends RecyclerView.ViewHolder {
 
         public ClinicPagerViewHolder(@NonNull CustomServiceLayoutBinding itemView) {
             super(itemView.getRoot());
-            binding=itemView;
+            binding = itemView;
         }
     }
 }

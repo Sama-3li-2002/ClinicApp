@@ -16,11 +16,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
@@ -31,7 +27,13 @@
         <activity android:name=".ui.activities.LoginScreen" />
         <activity android:name=".ui.activities.DoctorDetailsScreen" />
         <activity android:name=".ui.activities.ForgetPasswordScreen" />
-        <activity android:name=".ui.activities.CreateAccount" />
+        <activity android:name=".ui.activities.CreateAccount" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.activities.AddClinic"
             android:exported="true">
