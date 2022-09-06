@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@color/root_color"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:src="@drawable/backicon" />
+            android:src="@drawable/back_icon" />
 
         <TextView
             style="@style/screen_title_style"
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_toEndOf="@id/btn_back"
-            android:text="@string/lbl_lcoation" />
+            android:text="@string/title_location" />
 
         <ImageView
             android:id="@+id/btn_chat"
@@ -116,30 +116,30 @@
                 android:layout_marginTop="25dp">
                 <TextView android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#1C95C0"
+                    android:textColor="@color/skyBlue"
                     android:textSize="10sp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="@string/lbl_time"
+                    android:text="@string/txt_time"
                     android:layout_marginEnd="50dp"/>
                 <TextView android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#1C95C0"
+                    android:textColor="@color/skyBlue"
                     android:textSize="10sp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="@string/lbl_distance"
+                    android:text="@string/txt_distance"
                     android:layout_marginEnd="50dp"/>
                 <TextView android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#1C95C0"
+                    android:textColor="@color/skyBlue"
                     android:textSize="10sp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="@string/lbl_method"/>
+                    android:text="@string/txt_method"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_time"
-                    android:textColor="#091A20"
+                    android:textColor="@color/darkGreen"
                     android:textSize="14sp"
                     android:fontFamily="@font/arial_bold"
                     android:text="25 min"/>
@@ -147,7 +147,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_distance"
-                    android:textColor="#091A20"
+                    android:textColor="@color/darkGreen"
                     android:textSize="14sp"
                     android:fontFamily="@font/arial_bold"
                     android:text="9.4 mi"/>
@@ -155,7 +155,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_method"
-                    android:textColor="#091A20"
+                    android:textColor="@color/darkGreen"
                     android:textSize="14sp"
                     android:fontFamily="@font/arial_bold"
                     android:text="Car"/>

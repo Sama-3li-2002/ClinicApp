@@ -15,7 +15,7 @@
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="19dp"
         android:layout_weight="1"
-        android:src="@drawable/backicon" />
+        android:src="@drawable/back_icon" />
 
     <TextView
         android:id="@+id/tvdimo"
@@ -136,7 +136,7 @@
             android:layout_marginStart="20dp"
             android:fontFamily="@font/roboto_bold"
             android:text="About As"
-            android:textColor="@color/skyblue" />
+            android:textColor="@color/skyBlue" />
 
     <TextView
         android:id="@+id/tv_dimo4"
@@ -162,7 +162,7 @@
 
         android:fontFamily="@font/roboto_bold"
         android:text="Educational Degree"
-        android:textColor="@color/skyblue" />
+        android:textColor="@color/skyBlue" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_card2"

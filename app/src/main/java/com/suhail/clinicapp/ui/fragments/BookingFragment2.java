@@ -13,7 +13,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.suhail.clinicapp.R;
-import com.suhail.clinicapp.databinding.FragmentBooking2Binding;
+
+import com.suhail.clinicapp.databinding.FragmentBookingBinding;
 import com.suhail.clinicapp.listeners.OnClinicClickedListener;
 
 import java.util.Date;
@@ -27,7 +28,7 @@ public class BookingFragment2 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        FragmentBooking2Binding binding = FragmentBooking2Binding.inflate(getLayoutInflater());
+        FragmentBookingBinding binding = FragmentBookingBinding.inflate(getLayoutInflater());
 
 
         //handle button morning click event

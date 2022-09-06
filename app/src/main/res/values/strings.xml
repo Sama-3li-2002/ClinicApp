@@ -1,41 +1,45 @@
 <resources>
+
     <string name="app_name">ClinicApp</string>
+
+<!--           navigation bottom-->
     <string name="nav_home">Home</string>
     <string name="nav_appoitments">Appoitments</string>
     <string name="nav_notifications">Notifications</string>
     <string name="nav_profile">Profile</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="txt_name">Name:</string>
-    <string name="hint_name">Enter Name</string>
-    <string name="hint_email">Enter E-Mail</string>
-    <string name="hint_address">Enter Address</string>
-    <string name="hint_phone">Enter Phone</string>
-    <string name="title_activity_doctor_details_screen">DoctorDetailsScreen</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="lbl_booking">Booking</string>
-    <string name="txt_btn_evening">Evening</string>
-    <string name="txt_btn_morning">Morning</string>
 
-    <!--     Home fragment-->
-    <string name="txt_home">HOME</string>
+
+    <!--         Login activity-->
+    <string name="title_login">LOG IN</string>
+    <string name="txt_password">Password:</string>
+    <string name="txt_forgot_password">Forgot The Password?</string>
+    <string name="txt_sign_in"><u>SIGN IN</u></string>
+    <string name="btn_login">LOG IN</string>
+
+
+    <!--    Forgot password activity-->
+    <string name="title_forgot_password_title">FORGOT PASSWORD</string>
+    <string name="btn_send">SEND</string>
+
+
+<!--           OTP activity-->
+    <string name="title_your_otp">ENTER YOUR OTP</string>
+    <string name="txt_recover_paass">To Recover The Password,\nPlease Enter The Code Sent\nTo The Phone Number</string>
+
+    <!--     Home fragment -->
+    <string name="title_home">HOME</string>
     <string name="txt_our_service">Our Services</string>
     <string name="txt_about_us">About Us</string>
     <string name="txt_clinics">Clinics</string>
     <string name="txt_best_doctor">Best Doctors</string>
-    <string name="txt_consultation">Consultation</string>
     <string name="txt_appointment_booking">Appointment Booking</string>
+    <string name="txt_consultation">Consultation</string>
     <string name="txt_view_all"><u>view all</u></string>
 
+
     <!--    Add clinic fragment-->
-    <string name="txt_add_clinic">ADD CLINIC</string>
+    <string name="title_add_clinic">ADD CLINIC</string>
     <string name="txt_clinic_name">Clinic Name:</string>
     <string name="txt_clinic_administrator">Clinic Administrator Name:</string>
     <string name="txt_email">E_Mail:</string>
@@ -43,26 +47,58 @@
     <string name="txt_phone">Phone:</string>
     <string name="txt_telephone">Telephone:</string>
     <string name="txt_legal_papers">Legal Papers:</string>
+    <string name="txt_your_image">your image</string>
     <string name="btn_add">Add</string>
 
+
     <!--    Appointments fragment-->
-    <string name="txt_my_appointments">MY APPOINTMENTS</string>
+    <string name="title_appointments">MY APPOINTMENTS</string>
     <string name="txt_empty_data">There Are No Details For This Date \n Try Again Without Time</string>
 
-<!--       view all clinics fragment-->
-    <string name="txt_CLINICS">CLINICS</string>
 
+    <!--       view all clinics fragment-->
+    <string name="title_clinics">CLINICS</string>
+
+    <!--           Booking2 fragment-->
+    <string name="title_booking">Booking</string>
+    <string name="txt_btn_evening">Evening</string>
+    <string name="txt_btn_morning">Morning</string>
     <string name="lbl_booking_date">Booking date</string>
     <string name="txt_btn_ok">ok</string>
-    <string name="lbl_lcoation">Location</string>
-    <string name="lbl_time">TIME</string>
-    <string name="lbl_distance">DISTANCE</string>
-    <string name="lbl_method">METHOD</string>
-    <string name="lbl_settings">SETTINGS</string>
-    <string name="lbl_language">Language</string>
-    <string name="lbl_english">English (United Kingdom)</string>
-    <string name="lbl_arabic">Arabic (Saudi Arabia)</string>
-    <string name="lbl_logout">Log Out</string>
+
+    <!--    consultation fragment-->
+    <string name="title_consultation">CONSULTATION</string>
+    <string name="txt_question">QUESTION</string>
+    <string name="txt_write_question">Write Your Question</string>
+    <string name="txt_attach_picture">You Can Attach A Picture</string>
+    <string name="txt_doctor_answer">Doctor\'s Answer</string>
+    <string name="txt_your_answer">Write Your Answer</string>
+
+    <!--       profile fragment -->
+    <string name="title_profile">PROFILE</string>
+    <string name="txt_name">Name:</string>
+    <string name="hint_name">Enter Name</string>
+    <string name="hint_email">Enter E-Mail</string>
+    <string name="hint_address">Enter Address</string>
+    <string name="hint_phone">Enter Phone</string>
+
+    <!--         Notifications fragment-->
+    <string name="title_notificationS">NOTIFICATIONS</string>
+
+
+    <!--            Settings fragment-->
+    <string name="title_settings">SETTINGS</string>
+    <string name="txt_language">Language</string>
+    <string name="txt_english">English (United Kingdom)</string>
+    <string name="txt_arabic">Arabic (Saudi Arabia)</string>
     <string name="txt_logout">Log Out</string>
+
+<!--      map fragment-->
+    <string name="title_location">LOCATION</string>
+    <string name="txt_time">TIME</string>
+    <string name="txt_distance">DISTANCE</string>
+    <string name="txt_method">METHOD</string>
+
+
 
 </resources>

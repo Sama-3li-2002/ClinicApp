@@ -27,7 +27,7 @@ public class LoginScreen extends AppCompatActivity {
             }
         });
 
-        binding.tvSignup.setOnClickListener(new View.OnClickListener() {
+        binding.tvSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginScreen.this,CreateAccount.class));
@@ -40,6 +40,7 @@ public class LoginScreen extends AppCompatActivity {
                 startActivity(new Intent(LoginScreen.this,ForgetPasswordScreen.class));
             }
         });
+        binding.cvLogin.setBackgroundResource(R.drawable.custom_card_shape);
 
     }
 }

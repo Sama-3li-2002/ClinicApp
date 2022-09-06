@@ -77,9 +77,9 @@ public class HomeFragment extends Fragment {
             }
         });
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
-        binding.rvClincs.setLayoutManager(layoutManager);
-        binding.rvClincs.setHasFixedSize(true);
-        binding.rvClincs.setAdapter(adapter);
+        binding.rvClinics.setLayoutManager(layoutManager);
+        binding.rvClinics.setHasFixedSize(true);
+        binding.rvClinics.setAdapter(adapter);
 
 
         //START view pager2 with image slider -- services
