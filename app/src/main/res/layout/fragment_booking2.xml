@@ -183,16 +183,13 @@
               app:cardElevation="8dp"
               android:layout_marginHorizontal="15dp"
               android:layout_marginTop="10dp">
-              <FrameLayout
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent">
+
                   <ImageView
                       android:layout_width="match_parent"
                       android:layout_height="155dp"
                       android:src="@drawable/img_blue_wave"
                       android:scaleType="centerCrop"
                       android:foreground="#C9FFFFFF"/>
-              </FrameLayout>
               <TableLayout
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"

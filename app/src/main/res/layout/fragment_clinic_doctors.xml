@@ -16,13 +16,13 @@
             android:layout_centerVertical="true"/>
 
         <TextView
-            android:id="@+id/tv_clinic_name"
+            android:id="@+id/tv_doctor_name"
             style="@style/screen_title_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_toEndOf="@id/btn_back"
-            android:text="clinic name" />
+            android:text="Orthodontic" />
         <ImageView
             android:id="@+id/btn_map"
             android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
 
     </RelativeLayout>
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_departments"
+        android:id="@+id/rv_doctordebart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="34dp"

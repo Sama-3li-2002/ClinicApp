@@ -8,8 +8,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="txt_name">Name:</string>
     <string name="hint_name">Enter Name</string>
+    <string name="txt_email">E-Mail:</string>
     <string name="hint_email">Enter E-Mail</string>
+    <string name="txt_address">Address</string>
     <string name="hint_address">Enter Address</string>
+    <string name="txt_phone">Phone:</string>
     <string name="hint_phone">Enter Phone</string>
     <string name="title_activity_doctor_details_screen">DoctorDetailsScreen</string>
     <string name="prompt_email">Email</string>
@@ -23,35 +26,6 @@
     <string name="lbl_booking">Booking</string>
     <string name="txt_btn_evening">Evening</string>
     <string name="txt_btn_morning">Morning</string>
-
-    <!--     Home fragment-->
-    <string name="txt_home">HOME</string>
-    <string name="txt_our_service">Our Services</string>
-    <string name="txt_about_us">About Us</string>
-    <string name="txt_clinics">Clinics</string>
-    <string name="txt_best_doctor">Best Doctors</string>
-    <string name="txt_consultation">Consultation</string>
-    <string name="txt_appointment_booking">Appointment Booking</string>
-    <string name="txt_view_all"><u>view all</u></string>
-
-    <!--    Add clinic fragment-->
-    <string name="txt_add_clinic">ADD CLINIC</string>
-    <string name="txt_clinic_name">Clinic Name:</string>
-    <string name="txt_clinic_administrator">Clinic Administrator Name:</string>
-    <string name="txt_email">E_Mail:</string>
-    <string name="txt_address">Address:</string>
-    <string name="txt_phone">Phone:</string>
-    <string name="txt_telephone">Telephone:</string>
-    <string name="txt_legal_papers">Legal Papers:</string>
-    <string name="btn_add">Add</string>
-
-    <!--    Appointments fragment-->
-    <string name="txt_my_appointments">MY APPOINTMENTS</string>
-    <string name="txt_empty_data">There Are No Details For This Date \n Try Again Without Time</string>
-
-<!--       view all clinics fragment-->
-    <string name="txt_CLINICS">CLINICS</string>
-
     <string name="lbl_booking_date">Booking date</string>
     <string name="txt_btn_ok">ok</string>
     <string name="lbl_lcoation">Location</string>
@@ -64,5 +38,4 @@
     <string name="lbl_arabic">Arabic (Saudi Arabia)</string>
     <string name="lbl_logout">Log Out</string>
     <string name="txt_logout">Log Out</string>
-
 </resources>
