@@ -63,7 +63,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:cursorVisible="true"
-        android:inputType="text"
+        android:inputType="number"
         android:padding="10dp"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -74,7 +74,7 @@
         app:itemCount="5"
         app:itemHeight="48dp"
         app:itemRadius="4dp"
-        app:itemSpacing="0dp"
+        app:itemSpacing="5dp"
         app:itemWidth="48dp"
         app:lineWidth="2dp"
         app:viewType="rectangle" />

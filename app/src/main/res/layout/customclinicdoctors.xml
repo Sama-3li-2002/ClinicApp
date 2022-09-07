@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<androidx.cardview.widget.CardView
+    android:id="@+id/cv_cardvi"
+    app:layout_constraintTop_toTopOf="parent"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="10dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="86dp"
+            android:layout_marginVertical="14dp"
+            android:src="@drawable/doctoricon"
+            android:layout_marginStart="10dp"
+            android:layout_height="86dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+
+            android:layout_marginStart="5dp"
+
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_doctname"
+                android:text="Dr.aaaa Naser"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/skyblue"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_docdetils"
+                android:text="Dentist _ Orthodontist"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:numStars="5"
+                android:rating="4.0"
+                android:scaleX=".5"
+                android:scaleY=".5"
+                android:stepSize="1.0"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
