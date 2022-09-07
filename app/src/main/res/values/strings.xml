@@ -114,6 +114,12 @@
     <string name="lbl_work_place">Workplace</string>
     <string name="txt_btn_book_appointment">Book Appoitment</string>
     <string name="lbl_booking">Booking</string>
+    <string name="txt_doctors">Doctors</string>
+    <string name="txt_departments">Departments</string>
+    <string name="archieve">Archieve</string>
+    <string name="txt_add_department">Add Department</string>
+    <string name="txt_enter_department_details">Enter department details</string>
+    <string name="department_name">Department Name:</string>
 
 
 </resources>

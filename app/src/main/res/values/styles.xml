@@ -99,7 +99,7 @@
         <item name="android:backgroundTint">@color/gray</item>
         <item name="cardCornerRadius">@dimen/_5sdp</item>
         <item name="cardElevation">@dimen/_5sdp</item>
-        <item name="android:background">@color/gray</item>
+        <item name="android:background">@color/offWhite</item>
         <item name="android:layout_marginTop">@dimen/_5sdp</item>
         <item name="android:layout_marginBottom">@dimen/_1sdp</item>
         <item name="android:layout_marginStart">@dimen/_1sdp</item>
