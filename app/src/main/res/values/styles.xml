@@ -6,6 +6,7 @@
         <item name="fontFamily">@font/roboto_medium</item>
         <item name="android:textColor">@color/darkGreen</item>
     </style>
+
     <style name="style_btn_clicked">
         <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
@@ -13,6 +14,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:background">@drawable/shape_btn_clicked</item>
     </style>
+
     <style name="style_btn_unclicked">
         <item name="android:textSize">14sp</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
@@ -26,12 +28,14 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@drawable/shape_btn_time_reserved</item>
     </style>
+
     <style name="style_btn_time_unreserved">
         <item name="android:textSize">13sp</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@drawable/shape_btn_time_unreserved</item>
     </style>
+
     <style name="style_btn_time_clicked">
         <item name="android:textSize">13sp</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
@@ -45,6 +49,12 @@
         <item name="android:fontFamily">@font/roboto_medium</item>
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/skyBlue</item>
+    </style>
+
+    <style name="style_big_title">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#1C95C0</item>
     </style>
 
     <style name="CalenderViewCustom" parent="Theme.AppCompat">
@@ -61,7 +71,7 @@
         <item name="android:textColor">@color/skyBlue</item>
     </style>
 
-    <style name="inner_Card_style" >
+    <style name="inner_Card_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/_40sdp</item>
         <item name="android:layout_margin">@dimen/_5sdp</item>
@@ -72,7 +82,7 @@
     </style>
 
 
-    <style name="editTextInner_card_style" >
+    <style name="editTextInner_card_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@drawable/shape_edit_text</item>
@@ -83,17 +93,17 @@
     </style>
 
 
-<style name="style_editText_card">
-    <item name="android:layout_width">match_parent</item>
-    <item name="android:layout_height">@dimen/_40sdp</item>
-    <item name="android:backgroundTint">@color/gray</item>
-    <item name="cardCornerRadius">@dimen/_5sdp</item>
-    <item name="cardElevation">@dimen/_5sdp</item>
-    <item name="android:background">@color/gray</item>
-    <item name="android:layout_marginTop">@dimen/_5sdp</item>
-    <item name="android:layout_marginBottom">@dimen/_1sdp</item>
-    <item name="android:layout_marginStart">@dimen/_1sdp</item>
-    <item name="android:layout_marginEnd">@dimen/_1sdp</item>
-</style>
+    <style name="style_editText_card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:backgroundTint">@color/gray</item>
+        <item name="cardCornerRadius">@dimen/_5sdp</item>
+        <item name="cardElevation">@dimen/_5sdp</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_1sdp</item>
+        <item name="android:layout_marginStart">@dimen/_1sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_1sdp</item>
+    </style>
 
 </resources>

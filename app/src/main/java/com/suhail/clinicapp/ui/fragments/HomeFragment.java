@@ -116,6 +116,13 @@ public class HomeFragment extends Fragment {
         binding.viewPager2.setPageTransformer(transformer);
         //END view pager
 
+//button see all to open all clinics fragment
+        binding.tvViewAllClinic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+        activity.navController.navigate(R.id.nav_all_clinic);
+            }
+        });
 
         return binding.getRoot();
     }

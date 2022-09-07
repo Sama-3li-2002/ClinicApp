@@ -56,4 +56,9 @@
         android:label="view all clinic"
         tools:layout="@layout/fragment_all_clinics"/>
 
+    <fragment android:id="@+id/nav_doctor_details"
+        android:name="com.suhail.clinicapp.ui.fragments.DoctorDetailsFragment"
+        android:label="Doctor Details"
+        tools:layout="@layout/fragment_doctor_details"/>
+
 </navigation>

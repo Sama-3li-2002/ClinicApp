@@ -99,6 +99,8 @@
     <string name="txt_distance">DISTANCE</string>
     <string name="txt_method">METHOD</string>
     <string name="lbl_create_account">CREATE ACCOUNT</string>
+
+<!--    doctor details fragment-->
     <string name="lbl_first_name">First Name:</string>
     <string name="lbl_last_name">Last Name:</string>
     <string name="lbl_email">E_mail:</string>
@@ -106,6 +108,11 @@
     <string name="lbl_phone">Phone:</string>
     <string name="lbl_password">Password:</string>
     <string name="txt_btn_register">Register</string>
+    <string name="lbl_patient">Patient</string>
+    <string name="lbl_experience">Experience</string>
+    <string name="txt_education_degree">Education Degree</string>
+    <string name="lbl_work_place">Workplace</string>
+    <string name="txt_btn_book_appointment">Book Appoitment</string>
 
 
 </resources>

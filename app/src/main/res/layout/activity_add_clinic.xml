@@ -36,28 +36,37 @@
         android:layout_height="match_parent">
 
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="155dp"
-            android:elevation="@dimen/_40sdp"
-            android:layout_gravity="center_horizontal">
+<!--        <FrameLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="155dp"-->
+<!--            android:elevation="@dimen/_40sdp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            >-->
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/iv_logo_image"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/background_ic_logo"
-                android:layout_gravity="center_horizontal"
-                android:elevation="12dp"/>
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/iv_logo_image"-->
+<!--                android:layout_width="140dp"-->
+<!--                android:layout_height="140dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:src="@drawable/background_ic_logo"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:elevation="12dp"/>-->
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:elevation="35dp"
-                android:src="@drawable/ic_logo" />
-        </FrameLayout>
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:elevation="35dp"-->
+<!--                android:src="@drawable/ic_logo" />-->
+<!--        </FrameLayout>-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_logo_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/background_ic_logo"
+            android:layout_gravity="center_horizontal"
+            android:elevation="12dp"/>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_add_clinic"

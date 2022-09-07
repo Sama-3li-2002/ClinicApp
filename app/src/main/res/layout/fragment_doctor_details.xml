@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_30sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/tv_doctor_name"
+            style="@style/screen_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@id/btn_back"
+            android:text="Docotor Name" />
+
+        <ImageView
+            android:id="@+id/btn_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_chat" />
+
+        <ImageView
+            android:id="@+id/btn_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_toStartOf="@id/btn_chat"
+            android:src="@drawable/ic_notification_small" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_2sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_15sdp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="@dimen/_8sdp"
+                        android:layout_gravity="center_vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/_25sdp"
+                            android:paddingBottom="@dimen/_12sdp">
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                style="@style/style_label_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dr.Ahmed Mohammed" />
+
+                            <TextView
+                                android:id="@+id/tv_specialty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Dentist _ Orthodontist"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <RatingBar
+                                android:id="@+id/rating"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:progressTint="#FFCC01"
+                                android:rating="3" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/_10sdp">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_person"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    android:id="@+id/iv_person"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_patients_count"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:textSize="11sp"
+                                    android:textColor="@color/black"
+                                    android:text="1.2k"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/iv_person"
+                                    android:layout_marginStart="@dimen/_5sdp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textSize="8sp"
+                                    android:textColor="#B4DCEA"
+                                    app:layout_constraintTop_toBottomOf="@id/tv_patients_count"
+                                    app:layout_constraintStart_toEndOf="@id/iv_person"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:text="@string/lbl_patient"/>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/iv_experience"
+                                    android:src="@drawable/ic_experience"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/tv_patients_count"
+                                    android:layout_marginStart="@dimen/_30sdp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_experience_years"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:textSize="11sp"
+                                    android:textColor="@color/black"
+                                    android:text="1.2k"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/iv_experience"
+                                    android:layout_marginStart="@dimen/_5sdp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textSize="8sp"
+                                    android:textColor="#B4DCEA"
+                                    app:layout_constraintTop_toBottomOf="@id/tv_experience_years"
+                                    app:layout_constraintStart_toEndOf="@id/iv_experience"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:text="@string/lbl_experience"/>
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_doctor_image"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:elevation="@dimen/_10sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/man"
+                    app:riv_corner_radius="@dimen/_5sdp" />
+
+            </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/style_big_title"
+                    android:text="@string/txt_about_us"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_about_us"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="15sp"
+                android:textColor="#042D3B"
+                android:text="Lorem ipsum dolor si amet, consectetur elit, seddo eiusmod tempor incididunt ut ero labore elit dolore magna aliqua. Uit enim iad minim veniam, nostrud exercitation pojriti laboris nrisi aliqeuip commodos consequat.  "
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_big_title"
+                android:text="@string/txt_education_degree"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/screen_title_style"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="@string/lbl_experience"
+                android:layout_marginTop="@dimen/_5sdp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                app:cardCornerRadius="8sp"
+                app:cardElevation="@dimen/_8sdp"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rv_experience"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/screen_title_style"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="@string/lbl_work_place"
+                android:layout_marginTop="@dimen/_5sdp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                app:cardCornerRadius="8sp"
+                app:cardElevation="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_6sdp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rv_work_place"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_book_appointment"
+                style="@style/style_btn_clicked"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="@string/txt_btn_book_appointment"
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
