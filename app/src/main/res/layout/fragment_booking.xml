@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.androdi.com/apk/res-auto"
-    tools:context=".ui.fragments.BookingFragment">
+    >
 
     <ImageView
         android:layout_width="11dp"
@@ -16,7 +16,7 @@
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="19dp"
         android:layout_weight="1"
-        android:src="@drawable/backicon" />
+        android:src="@drawable/back_icon" />
 
     <TextView
         android:id="@+id/tvdimo"

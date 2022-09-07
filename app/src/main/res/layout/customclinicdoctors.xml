@@ -39,7 +39,7 @@
                 android:id="@+id/tv_doctname"
                 android:text="Dr.aaaa Naser"
                 android:layout_marginTop="25dp"
-                android:textColor="@color/skyblue"
+                android:textColor="@color/skyBlue"
                 android:textSize="16sp"
                 android:fontFamily="@font/roboto_medium"
                 android:layout_width="match_parent"
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"/>
 
             <androidx.appcompat.widget.AppCompatRatingBar
-                style="@style/RatingBar"
+                style="@style/Widget.AppCompat.RatingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:max="5"

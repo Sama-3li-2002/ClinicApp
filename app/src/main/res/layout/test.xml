@@ -6,34 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
  >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="26dp"
-        android:layout_marginTop="50dp">
-        <ImageView
-            android:id="@+id/btn_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/backicon"
-            android:layout_centerVertical="true"
-/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_toEndOf="@id/btn_back"
-            android:text="@string/lbl_booking"
-style="@style/screen_title_style"/>
-
-        <ImageView
-            android:id="@+id/btn_chat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_chat"
-            android:layout_alignParentEnd="true"/>
-    </RelativeLayout>
-<ScrollView
+    <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -61,7 +34,7 @@ app:cardElevation="8dp"
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
                 android:text="@string/txt_btn_evening"
-                style="@style/style_btn_unclick"
+                style="@style/style_btn_unclicked"
                 android:paddingHorizontal="42dp"
                 android:paddingTop="9dp"
                 android:paddingBottom="6dp"
@@ -71,10 +44,10 @@ app:cardElevation="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="13dp"
-                android:text="@string/txt_btn_click"
+                android:text="@string/txt_btn_morning"
                 android:paddingHorizontal="42dp"
                 android:paddingVertical="10dp"
-                style="@style/style_btn_click"
+                style="@style/style_btn_unclicked"
                 />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
