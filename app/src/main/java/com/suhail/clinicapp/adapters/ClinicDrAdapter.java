@@ -8,13 +8,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.suhail.clinicapp.databinding.CustomclinicdoctorsBinding;
+import com.suhail.clinicapp.databinding.CustomClinicDoctorsBinding;
+import com.suhail.clinicapp.models.Doctor;
 
 import java.util.List;
 
 public class ClinicDrAdapter extends RecyclerView.Adapter<ClinicDrAdapter.DoctorsViewHolder> {
 
-    CustomclinicdoctorsBinding binding ;
+    CustomClinicDoctorsBinding binding;
     Context context;
     List<Doctor> clinicdoctor ;
 
@@ -26,7 +27,7 @@ public class ClinicDrAdapter extends RecyclerView.Adapter<ClinicDrAdapter.Doctor
     @NonNull
     @Override
     public DoctorsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ClinicDrAdapter.DoctorsViewHolder(CustomclinicdoctorsBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false));
+        return new ClinicDrAdapter.DoctorsViewHolder(CustomClinicDoctorsBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false));
     }
 
     @Override
@@ -44,7 +45,7 @@ public class ClinicDrAdapter extends RecyclerView.Adapter<ClinicDrAdapter.Doctor
 
     public class DoctorsViewHolder extends RecyclerView.ViewHolder{
 
-        public DoctorsViewHolder(@NonNull CustomclinicdoctorsBinding itemView) {
+        public DoctorsViewHolder(@NonNull CustomClinicDoctorsBinding itemView) {
             super(itemView.getRoot());
           binding=itemView;
         }

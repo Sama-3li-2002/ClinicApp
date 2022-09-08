@@ -11,21 +11,16 @@
     <color name="white">#FFFFFFFF</color>
     <color name="skyBlue">#1C95C0</color>
     <color name="yellow">#FFBB00</color>
+    <color name="yellow2">#FFCC01</color>
     <color name="offWhite">#FCFCFC</color>
     <color name="gray">#F8F8F8</color>
     <color name="gray2">#E8F2F5</color>
     <color name="gray3">#9BABB1</color>
     <color name="lightBlue">#83DBFB</color>
+    <color name="lightBlue2">#B4DCEA</color>
     <color name="darkGreen">#091A20</color>
     <color name="navyBlue">#042D3B</color>
     <color name="navyBlue2">#094F67</color>
     <color name="red">#DB1616</color>
     <color name="pink">#F37B8F</color>
-
-
-
-
-
-
-
 </resources>

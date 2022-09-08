@@ -14,7 +14,6 @@ import androidx.fragment.app.Fragment;
 
 import com.suhail.clinicapp.R;
 import com.suhail.clinicapp.databinding.FragmentBooking2Binding;
-import com.suhail.clinicapp.databinding.TestBinding;
 import com.suhail.clinicapp.listeners.OnClinicClickedListener;
 
 import java.util.Date;

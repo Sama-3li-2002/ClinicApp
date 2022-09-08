@@ -17,19 +17,15 @@ import com.suhail.clinicapp.databinding.FragmentHomeBinding;
 public class EmptyAppointmentFragment extends Fragment {
         MainActivity activity;
 
-
     public EmptyAppointmentFragment() {
         // Required empty public constructor
     }
-
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activity = (MainActivity) getActivity();
         }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

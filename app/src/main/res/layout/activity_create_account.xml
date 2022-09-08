@@ -28,11 +28,12 @@
             android:layout_marginStart="@dimen/_20sdp"
             android:layout_toEndOf="@id/btn_back"
             android:fontFamily="@font/roboto_medium"
-            android:text="@string/lbl_create_account"
+            android:text="@string/title_create_account"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
     </RelativeLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -58,9 +59,7 @@
                 android:layout_below="@+id/iv_logo"
                 android:layout_marginHorizontal="@dimen/_16sdp"
                 android:layout_marginTop="@dimen/_15sdp"
-
                 app:cardCornerRadius="@dimen/_8sdp"
-
                 app:cardElevation="@dimen/_8sdp">
 
                 <LinearLayout
@@ -86,45 +85,41 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:labelFor="@+id/et_first_name"
-                                android:text="@string/lbl_first_name" />
+                                android:text="@string/txt_first_name" />
 
                             <TextView
                                 style="@style/style_label_text"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-
                                 android:labelFor="@id/et_last_name"
-                                android:text="@string/lbl_last_name" />
+                                android:text="@string/txt_last_name" />
 
                         </TableRow>
 
-                        <TableRow android:layout_width="match_parent"
+                        <TableRow
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <androidx.cardview.widget.CardView
                                 style="@style/style_editText_card"
                                 android:layout_weight="1"
                                 android:layout_width="@dimen/_50sdp"
-                                android:layout_marginEnd="@dimen/_20sdp"
-                                >
+                                android:layout_marginEnd="@dimen/_20sdp">
                                 <EditText
                                     android:id="@+id/et_first_name"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    style="@style/editTextInner_card_style"
-                                    />
+                                    style="@style/editTextInner_card_style" />
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
                                 style="@style/style_editText_card"
                                 android:layout_weight="1"
-                                android:layout_width="@dimen/_50sdp"
-                                >
+                                android:layout_width="@dimen/_50sdp">
                                 <EditText
                                     android:id="@+id/et_last_name"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    style="@style/editTextInner_card_style"
-                                    />
+                                    style="@style/editTextInner_card_style" />
                             </androidx.cardview.widget.CardView>
                         </TableRow>
                     </TableLayout>
@@ -134,20 +129,16 @@
                         android:layout_marginStart="@dimen/_1sdp"
                         style="@style/style_label_text"
                         android:labelFor="@id/et_email"
-                        android:text="@string/lbl_email"
-                         />
+                        android:text="@string/txt_email" />
 
                     <androidx.cardview.widget.CardView
                         style="@style/style_editText_card"
-
-                        android:layout_weight="1"
-                        >
+                        android:layout_weight="1">
                         <EditText
                             android:id="@+id/et_email"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            style="@style/editTextInner_card_style"
-                            />
+                            style="@style/editTextInner_card_style" />
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -155,19 +146,16 @@
                         android:layout_marginStart="@dimen/_1sdp"
                         style="@style/style_label_text"
                         android:labelFor="@id/et_address"
-                        android:text="@string/lbl_address"
-                        />
+                        android:text="@string/txt_address" />
 
                     <androidx.cardview.widget.CardView
                         style="@style/style_editText_card"
-                        android:layout_weight="1"
-                        >
+                        android:layout_weight="1">
                         <EditText
                             android:id="@+id/et_address"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            style="@style/editTextInner_card_style"
-                            />
+                            style="@style/editTextInner_card_style" />
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -175,19 +163,16 @@
                         android:layout_marginStart="@dimen/_1sdp"
                         style="@style/style_label_text"
                         android:labelFor="@id/et_phone"
-                        android:text="@string/lbl_phone"
-                        />
+                        android:text="@string/txt_phone" />
 
                     <androidx.cardview.widget.CardView
                         style="@style/style_editText_card"
-                        android:layout_weight="1"
-                        >
+                        android:layout_weight="1">
                         <EditText
                             android:id="@+id/et_phone"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            style="@style/editTextInner_card_style"
-                            />
+                            style="@style/editTextInner_card_style" />
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -195,19 +180,16 @@
                         android:layout_marginStart="@dimen/_1sdp"
                         style="@style/style_label_text"
                         android:labelFor="@id/et_password"
-                        android:text="@string/lbl_password"
-                        />
+                        android:text="@string/txt_password" />
 
                     <androidx.cardview.widget.CardView
                         style="@style/style_editText_card"
-                        android:layout_weight="1"
-                        >
+                        android:layout_weight="1">
                         <EditText
                             android:id="@+id/et_password"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            style="@style/editTextInner_card_style"
-                            />
+                            style="@style/editTextInner_card_style" />
                     </androidx.cardview.widget.CardView>
 
 
@@ -217,8 +199,7 @@
                         android:layout_height="wrap_content"
                         style="@style/style_btn_clicked"
                         android:layout_marginTop="@dimen/_20sdp"
-                        android:text="@string/txt_btn_register"
-                        />
+                        android:text="@string/txt_btn_register" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

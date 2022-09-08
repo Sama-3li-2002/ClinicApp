@@ -19,6 +19,7 @@ public class ForgetPasswordScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityForgetPasswordScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
         binding.btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

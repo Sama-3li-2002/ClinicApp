@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+   <data>
+    <variable
+    name="viewModel"
+    type="com.suhail.clinicapp.viewModel.DoctorViewModel" />
+   </data>
+
+   <LinearLayout
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
@@ -67,31 +77,29 @@
                         android:layout_marginVertical="@dimen/_5sdp"
                         app:cardCornerRadius="@dimen/_8sdp"
                         app:cardElevation="@dimen/_8sdp"
-                        android:layout_gravity="center_vertical"
-                        >
+                        android:layout_gravity="center_vertical">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginStart="@dimen/_35sdp"
                             android:orientation="vertical"
                             android:paddingTop="@dimen/_25sdp"
-                            android:paddingBottom="@dimen/_12sdp">
+                            android:padding="@dimen/_12sdp">
 
                             <TextView
                                 android:id="@+id/tv_name"
                                 style="@style/style_label_text"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Dr.Ahmed Mohammed" />
-
+                                android:text="@{viewModel.mutableLiveData.name}" />
                             <TextView
                                 android:id="@+id/tv_specialty"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_medium"
-                                android:text="Dentist _ Orthodontist"
+                                android:text="@{viewModel.mutableLiveData.specialty}"
                                 android:textColor="@color/black"
                                 android:textSize="12sp" />
 
@@ -100,8 +108,8 @@
                                 style="?android:attr/ratingBarStyleSmall"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:progressTint="#FFCC01"
-                                android:rating="3" />
+                                android:progressTint="@color/yellow2"
+                                android:rating="@{viewModel.mutableLiveData.rate}" />
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
@@ -122,7 +130,7 @@
                                     android:fontFamily="@font/roboto_bold"
                                     android:textSize="11sp"
                                     android:textColor="@color/black"
-                                    android:text="1.2k"
+                                    android:text=""
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintStart_toEndOf="@id/iv_person"
                                     android:layout_marginStart="@dimen/_5sdp"/>
@@ -131,12 +139,12 @@
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/roboto_medium"
                                     android:textSize="8sp"
-                                    android:textColor="#B4DCEA"
+                                    android:textColor="@color/lightBlue2"
                                     app:layout_constraintTop_toBottomOf="@id/tv_patients_count"
                                     app:layout_constraintStart_toEndOf="@id/iv_person"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="@string/lbl_patient"/>
+                                    android:text="@string/txt_patient"/>
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -153,7 +161,7 @@
                                     android:fontFamily="@font/roboto_bold"
                                     android:textSize="11sp"
                                     android:textColor="@color/black"
-                                    android:text="1.2k"
+                                    android:text=""
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintStart_toEndOf="@id/iv_experience"
                                     android:layout_marginStart="@dimen/_5sdp"/>
@@ -162,12 +170,12 @@
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/roboto_medium"
                                     android:textSize="8sp"
-                                    android:textColor="#B4DCEA"
+                                    android:textColor="@color/lightBlue2"
                                     app:layout_constraintTop_toBottomOf="@id/tv_experience_years"
                                     app:layout_constraintStart_toEndOf="@id/iv_experience"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     android:layout_marginStart="@dimen/_5sdp"
-                                    android:text="@string/lbl_experience"/>
+                                    android:text="@string/txt_experience"/>
 
 
                             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -181,7 +189,7 @@
                     android:layout_marginStart="@dimen/_25sdp"
                     android:elevation="@dimen/_10sdp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/man"
+                    android:src="@{viewModel.mutableLiveData.doctorImage}"
                     app:riv_corner_radius="@dimen/_5sdp" />
 
             </FrameLayout>
@@ -198,11 +206,10 @@
                 android:id="@+id/tv_about_us"
                 android:fontFamily="@font/roboto_regular"
                 android:textSize="15sp"
-                android:textColor="#042D3B"
-                android:text="Lorem ipsum dolor si amet, consectetur elit, seddo eiusmod tempor incididunt ut ero labore elit dolore magna aliqua. Uit enim iad minim veniam, nostrud exercitation pojriti laboris nrisi aliqeuip commodos consequat.  "
+                android:textColor="@color/navyBlue"
+                android:text="@{viewModel.mutableLiveData.about}"
                 android:layout_marginHorizontal="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                />
+                android:layout_marginTop="@dimen/_10sdp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -216,21 +223,21 @@
                 android:layout_height="wrap_content"
                 style="@style/screen_title_style"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:text="@string/lbl_experience"
+                android:text="@string/txt_experience"
                 android:layout_marginTop="@dimen/_5sdp"/>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/_5sdp"
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 app:cardCornerRadius="8sp"
-                app:cardElevation="@dimen/_8sdp"
-                >
+                app:cardElevation="@dimen/_8sdp">
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/rv_experience"
-                    />
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
             </androidx.cardview.widget.CardView>
 
 
@@ -239,7 +246,7 @@
                 android:layout_height="wrap_content"
                 style="@style/screen_title_style"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:text="@string/lbl_work_place"
+                android:text="@string/txt_work_place"
                 android:layout_marginTop="@dimen/_5sdp"/>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -252,7 +259,8 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/rv_work_place"/>
+                    android:id="@+id/rv_work_place"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -263,10 +271,11 @@
                 android:layout_marginHorizontal="@dimen/_30sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginBottom="@dimen/_15sdp"
-                android:text="@string/txt_btn_book_appointment"
-                />
+                android:text="@string/btn_book_appointment" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>
+
+</layout>

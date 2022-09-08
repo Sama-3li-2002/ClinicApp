@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_toEndOf="@id/btn_back"
-            android:text="@string/lbl_booking" />
+            android:text="@string/title_booking" />
 
         <ImageView
             android:id="@+id/btn_chat"

@@ -45,6 +45,6 @@ public class NotificationsFragment extends Fragment {
         binding.rvNotifications.setLayoutManager(new LinearLayoutManager(getActivity()));
         binding.rvNotifications.setAdapter(new NotificationsRvAdapter(getActivity(),notifications));
         return binding.getRoot();
-//        return inflater.inflate(R.layout.fragment_notifications, container, false);
+
     }
 }

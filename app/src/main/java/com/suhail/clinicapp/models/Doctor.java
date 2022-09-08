@@ -1,4 +1,4 @@
-package com.suhail.clinicapp.adapters;
+package com.suhail.clinicapp.models;
 
 public class Doctor {
     private String nameDoctor;

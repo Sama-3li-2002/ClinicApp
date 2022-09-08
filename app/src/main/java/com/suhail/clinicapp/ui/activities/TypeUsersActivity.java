@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.suhail.clinicapp.R;
 
 public class TypeUsersActivity extends AppCompatActivity {
-//iv_patent
+
 ImageView img1;
 
     @Override
