@@ -6,6 +6,7 @@ android {
     compileSdk 32
     buildFeatures{
         viewBinding true
+        dataBinding true
     }
     defaultConfig {
         applicationId "com.suhail.clinicapp"
@@ -28,11 +29,6 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     buildToolsVersion '33.0.0'
-
-    dataBinding{
-        enabled = true
-    }
-
 
 }
 

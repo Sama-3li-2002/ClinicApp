@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import com.suhail.clinicapp.adapters.ExperienceWorkplaceRvAdapter;
+import com.suhail.clinicapp.adapters.ExperienceWorkplaceRvAdapter2;
 import com.suhail.clinicapp.databinding.FragmentDoctorDetailsBinding;
 import com.suhail.clinicapp.models.DoctorDetails;
 import com.suhail.clinicapp.viewModel.DoctorViewModel;
@@ -36,29 +37,19 @@ public class DoctorDetailsFragment extends Fragment {
 
 
 
-//            doctorViewModel.mutableLiveData.observe(getActivity(), new Observer<DoctorDetails>() {
-//                @Override
-//                public void onChanged(DoctorDetails doctorDetails) {
-//                    //bind doctor details to fragment views
-////                    binding.tvDoctorName.setText(doctorDetails.getName());
-//                    binding.tvName.setText(doctorDetails.getName());
-//                    binding.ivDoctorImage.setImageResource(doctorDetails.getDoctorImage());
-//                    binding.tvSpecialty.setText(doctorDetails.getSpecialty());
-//                    binding.rating.setRating(doctorDetails.getRate());
-//                    binding.tvPatientsCount.setText(doctorDetails.getPatientsCont()+"");
-//                    binding.tvExperienceYears.setText(doctorDetails.getExperienceYears()+" Years");
-//                    binding.tvAboutUs.setText(doctorDetails.getAbout());
-//
-//                    //set the recycler of experience and workplaces
-//                    ExperienceWorkplaceRvAdapter experienceAdapter = new ExperienceWorkplaceRvAdapter(doctorDetails.getExperienceList());
-//                    ExperienceWorkplaceRvAdapter workplaceAdapter = new ExperienceWorkplaceRvAdapter(doctorDetails.getWorkplacesList());
-//                    binding.rvExperience.setLayoutManager(new LinearLayoutManager(getActivity()));
-//                    binding.rvWorkPlace.setLayoutManager(new LinearLayoutManager(getActivity()));
-//                    binding.rvExperience.setAdapter(experienceAdapter);
-//                    binding.rvWorkPlace.setAdapter(workplaceAdapter);
-//
-//                }
-//            });
+            doctorViewModel.mutableLiveData.observe(getActivity(), new Observer<DoctorDetails>() {
+                @Override
+                public void onChanged(DoctorDetails doctorDetails) {
+                    //set the recycler of experience and workplaces
+                    ExperienceWorkplaceRvAdapter2 experienceAdapter = new ExperienceWorkplaceRvAdapter2(doctorDetails.getExperienceList());
+                    ExperienceWorkplaceRvAdapter2 workplaceAdapter = new ExperienceWorkplaceRvAdapter2(doctorDetails.getWorkplacesList());
+                    binding.rvExperience.setLayoutManager(new LinearLayoutManager(getActivity()));
+                    binding.rvWorkPlace.setLayoutManager(new LinearLayoutManager(getActivity()));
+                    binding.rvExperience.setAdapter(experienceAdapter);
+                    binding.rvWorkPlace.setAdapter(workplaceAdapter);
+
+                }
+            });
 
         return binding.getRoot();
     }

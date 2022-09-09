@@ -1,34 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical">
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="data"
+            type="com.suhail.clinicapp.models.ExperienceWorkplace" />
+    </data>
     <LinearLayout
-        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginHorizontal="@dimen/_10sdp">
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/iv_image"
-            android:layout_width="@dimen/_27sdp"
-            android:layout_height="@dimen/_27sdp"
-            tools:src="@drawable/doctor"/>
-        <TextView
-            android:id="@+id/tv_text"
-            android:layout_width="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium"
-            android:textSize="12sp"
-            android:textColor="#042D3B"
-            tools:text="It Started Working Since 1988"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_gravity="center_vertical"/>
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_image"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:setImage="@{data.image}"/>
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="12sp"
+                android:textColor="#042D3B"
+                tools:text="@{data.text}"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#EDF7FA"
+            android:layout_marginTop="@dimen/_5sdp"/>
     </LinearLayout>
-<View
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/_1sdp"
-    android:background="#EDF7FA"
-    android:layout_marginTop="@dimen/_5sdp"/>
-</LinearLayout>
+</layout>

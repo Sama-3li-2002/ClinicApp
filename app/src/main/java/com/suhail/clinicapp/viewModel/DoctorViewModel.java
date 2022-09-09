@@ -1,9 +1,12 @@
 package com.suhail.clinicapp.viewModel;
 
+import android.media.Image;
+import android.widget.ImageView;
+import android.widget.RatingBar;
+
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import androidx.lifecycle.ViewModelProvider;
-
+import androidx.databinding.BindingAdapter;
 import com.suhail.clinicapp.R;
 import com.suhail.clinicapp.models.DoctorDetails;
 import com.suhail.clinicapp.models.ExperienceWorkplace;
@@ -50,5 +53,15 @@ public class DoctorViewModel extends ViewModel {
         doctor1.setWorkplacesList(workplacesList);
 
         return doctor1;
+    }
+
+    @BindingAdapter("android:setRate")
+    public static void setRate(RatingBar ratingBar, float rate){
+      ratingBar.setRating(rate);
+    }
+
+    @BindingAdapter("android:setImage")
+    public static void setImage(ImageView imageView,int imageSrc){
+      imageView.setImageResource(imageSrc);
     }
 }

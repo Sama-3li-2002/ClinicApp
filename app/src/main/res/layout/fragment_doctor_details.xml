@@ -109,7 +109,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:progressTint="@color/yellow2"
-                                android:rating="@{viewModel.mutableLiveData.rate}" />
+                                android:setRate="@{viewModel.mutableLiveData.rate}" />
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
@@ -130,7 +130,7 @@
                                     android:fontFamily="@font/roboto_bold"
                                     android:textSize="11sp"
                                     android:textColor="@color/black"
-                                    android:text=""
+                                    android:text="@{String.valueOf(viewModel.mutableLiveData.patientsCont)}"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintStart_toEndOf="@id/iv_person"
                                     android:layout_marginStart="@dimen/_5sdp"/>
@@ -161,7 +161,7 @@
                                     android:fontFamily="@font/roboto_bold"
                                     android:textSize="11sp"
                                     android:textColor="@color/black"
-                                    android:text=""
+                                    android:text="@{String.valueOf(viewModel.mutableLiveData.experienceYears)}"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintStart_toEndOf="@id/iv_experience"
                                     android:layout_marginStart="@dimen/_5sdp"/>
@@ -189,7 +189,7 @@
                     android:layout_marginStart="@dimen/_25sdp"
                     android:elevation="@dimen/_10sdp"
                     android:scaleType="centerCrop"
-                    android:src="@{viewModel.mutableLiveData.doctorImage}"
+                    android:setImage="@{viewModel.mutableLiveData.doctorImage}"
                     app:riv_corner_radius="@dimen/_5sdp" />
 
             </FrameLayout>
@@ -201,7 +201,7 @@
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_10sdp"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_about_us"
                 android:fontFamily="@font/roboto_regular"
