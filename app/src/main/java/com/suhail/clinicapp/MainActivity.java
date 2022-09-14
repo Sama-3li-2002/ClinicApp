@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initNavigation(){
         configuration= new AppBarConfiguration.Builder(
-                R.id.nav_home,R.id.nav_appotiments,R.id.nav_notifications,R.id.nav_profile
+                R.id.nav_home,R.id.nav_appotiments,R.id.nav_all_clinic,R.id.nav_profile
         ).build();
         navController= Navigation.findNavController(this,R.id.nav_host_name);
         NavigationUI.setupWithNavController(binding.bottomNav,navController);
@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.btn_appoitments:
                         navController.navigate(R.id.nav_appotiments);
                         break;
-                    case R.id.btn_notifications:
-                        navController.navigate(R.id.nav_notifications);
+                    case R.id.btn_clinics:
+                        navController.navigate(R.id.nav_all_clinic);
                         break;
                     case R.id.btn_profile:
                         navController.navigate(R.id.nav_profile);

@@ -4,30 +4,49 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import com.suhail.clinicapp.MainActivity;
 import com.suhail.clinicapp.R;
 import com.suhail.clinicapp.databinding.ActivityLoginScreenBinding;
+import com.suhail.clinicapp.ui.fragments.AdminSectionsActivity;
 
 public class LoginScreen extends AppCompatActivity {
     ActivityLoginScreenBinding binding;
+    int usertype = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding=ActivityLoginScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        if(getIntent() != null){
+            usertype = getIntent().getIntExtra(TypeUsersActivity.USER_TYPE_KEY,1);
+        }
+        switch (usertype){
+            case 1 :
+                binding.btnSignUp.setVisibility(View.VISIBLE);
+                break;
+        }
         binding.btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginScreen.this, MainActivity.class));
+                switch (usertype){
+                    case 1:
+                        startActivity(new Intent(LoginScreen.this, MainActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(LoginScreen.this, AdminSectionsActivity.class));
+                        break;
+                    case 3:
+                        Toast.makeText(LoginScreen.this, "In Progress..", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
-        binding.tvSignIn.setOnClickListener(new View.OnClickListener() {
+        binding.btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginScreen.this,CreateAccount.class));
@@ -41,6 +60,12 @@ public class LoginScreen extends AppCompatActivity {
             }
         });
         binding.cvLogin.setBackgroundResource(R.drawable.custom_card_shape);
+        binding.btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
     }
 }

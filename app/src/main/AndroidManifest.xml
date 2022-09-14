@@ -16,10 +16,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
@@ -36,9 +32,14 @@
             android:name=".ui.activities.CreateAccount"
             android:exported="true">
         </activity>
+        <activity android:name=".ui.fragments.AdminSectionsActivity"/>
         <activity
             android:name=".ui.activities.TypeUsersActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

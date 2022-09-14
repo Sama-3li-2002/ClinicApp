@@ -36,7 +36,7 @@ public class ClinicRvAdapter extends RecyclerView.Adapter<ClinicRvAdapter.Clinic
     @Override
     public void onBindViewHolder(@NonNull ClinicViewHolder holder, int position) {
         Clinic clinic=clinics.get(position);
-        binding.cvClinic.setBackgroundResource(R.drawable.custom_clinic_image_shape);
+        //binding.cvClinic.setBackgroundResource(R.drawable.custom_clinic_image_shape);
         binding.ivClinicImage.setImageResource(clinic.getImage());
         binding.tvClinicName.setText(clinic.getName());
         binding.tvClincAddress.setText(clinic.getAddress());

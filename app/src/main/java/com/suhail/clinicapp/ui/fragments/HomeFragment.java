@@ -50,7 +50,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         FragmentHomeBinding binding =FragmentHomeBinding.inflate(getLayoutInflater());
 
-        binding.ivNotification.setOnClickListener(new View.OnClickListener() {
+        binding.btnNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {activity.navController.navigate(R.id.nav_notifications);}
         });

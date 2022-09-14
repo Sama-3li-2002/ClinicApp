@@ -1,5 +1,6 @@
 package com.suhail.clinicapp.adapters;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,15 +16,17 @@ import java.util.List;
 
 public class DepartmentsRvAdapter extends RecyclerView.Adapter<DepartmentsRvAdapter.DepartmentViewHolder> {
 List<Department> departments;
+Context context;
 
-    public DepartmentsRvAdapter(List<Department> departments) {
+    public DepartmentsRvAdapter(List<Department> departments, Context context) {
         this.departments = departments;
+        this.context = context;
     }
 
     @NonNull
     @Override
     public DepartmentViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_department_layout,parent,false);
+        View v = LayoutInflater.from(context).inflate(R.layout.custom_department_layout,parent,false);
         return new DepartmentViewHolder(v);
     }
 
@@ -36,6 +39,8 @@ List<Department> departments;
     public int getItemCount() {
         return departments.size();
     }
+
+
 
     class DepartmentViewHolder extends RecyclerView.ViewHolder{
         TextView tv_name;

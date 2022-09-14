@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginBottom="31dp">
+    android:layout_marginVertical="@dimen/_7sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp">
 <FrameLayout
     android:paddingHorizontal="@dimen/_5sdp"
     app:layout_constraintTop_toTopOf="parent"
@@ -24,6 +25,9 @@
             android:layout_width="match_parent"
             android:layout_height="84dp"
             app:cardCornerRadius="8dp"
+            app:cardElevation="@dimen/_5sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
             app:cardBackgroundColor="@color/gray2">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -69,7 +73,7 @@
                     android:layout_width="79dp"
                     android:layout_height="107dp"
                     app:riv_corner_radius="8dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/man" />
             </androidx.constraintlayout.widget.ConstraintLayout>

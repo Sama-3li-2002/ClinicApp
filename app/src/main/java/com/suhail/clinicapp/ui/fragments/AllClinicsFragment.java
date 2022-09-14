@@ -43,7 +43,7 @@ public class AllClinicsFragment extends Fragment {
         // Inflate the layout for this fragment
         FragmentAllClinicsBinding binding =FragmentAllClinicsBinding.inflate(getLayoutInflater());
 
-        binding.ivNotification.setOnClickListener(new View.OnClickListener() {
+        binding.btnNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {activity.navController.navigate(R.id.nav_notifications);}
         });
@@ -71,7 +71,7 @@ public class AllClinicsFragment extends Fragment {
         binding.rvClincs.setAdapter(adapter);
 
 
-        binding.ivNotification.setOnClickListener(new View.OnClickListener() {
+        binding.btnNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 activity.navController.navigate(R.id.nav_doctor_details);

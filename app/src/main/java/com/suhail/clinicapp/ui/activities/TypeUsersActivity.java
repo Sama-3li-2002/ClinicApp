@@ -9,23 +9,41 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.suhail.clinicapp.R;
+import com.suhail.clinicapp.databinding.ActivityTypeUsersBinding;
 
-public class TypeUsersActivity extends AppCompatActivity {
+public class TypeUsersActivity extends AppCompatActivity implements View.OnClickListener {
 
-ImageView img1;
-
+ActivityTypeUsersBinding binding;
+public static final String USER_TYPE_KEY = "userType";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_type_users);
-        Toast.makeText(TypeUsersActivity.this ,"x" ,Toast.LENGTH_LONG).show();
-        img1 =findViewById(R.id.iv_patent);
-        img1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(TypeUsersActivity.this,LoginScreen.class);
-                startActivity(intent);
-            }
-        });
+
+        binding = ActivityTypeUsersBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+
+        binding.btnPatient.setOnClickListener(this);
+        binding.btnAdmin.setOnClickListener(this);
+        binding.btnDoctor.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        int userType=1;
+        switch (v.getId()){
+            case R.id.btn_patient:
+                userType = 1;
+                break;
+            case R.id.btn_Admin:
+                userType = 2;
+                break;
+            case R.id.btn_doctor:
+                userType = 3;
+                break;
+        }
+        Intent intent = new Intent(TypeUsersActivity.this,LoginScreen.class);
+        intent.putExtra(USER_TYPE_KEY,userType);
+        startActivity(intent);
     }
 }

@@ -4,26 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/root_color">
+    android:background="@color/root_color"
+    android:gravity="center_horizontal">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_20sdp">
+
         <ImageView
+            android:id="@+id/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/back_icon"
-            android:id="@+id/btn_back"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/back_icon" />
 
         <TextView
             android:id="@+id/tv_clinic_name"
             style="@style/screen_title_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_centerVertical="true"
             android:layout_toEndOf="@id/btn_back"
             android:text="clinic name" />
 
@@ -32,13 +36,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_map"
-            android:layout_alignParentEnd="true"/>
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_toStartOf="@id/btn_map"
+            android:layout_centerVertical="true"
             android:src="@drawable/ic_round_search_24" />
 
     </RelativeLayout>
@@ -46,7 +52,9 @@
         android:id="@+id/rv_departments"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_15sdp"/>
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_gravity="center_horizontal"
+        />
 
 </LinearLayout>

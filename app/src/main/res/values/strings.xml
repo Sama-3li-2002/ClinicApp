@@ -11,11 +11,11 @@
 
 
     <!--         Login activity-->
-    <string name="title_login">LOG IN</string>
+    <string name="title_login">SIGN IN</string>
     <string name="txt_password">Password:</string>
     <string name="txt_forgot_password">Forgot The Password?</string>
-    <string name="txt_sign_in"><u>SIGN IN</u></string>
-    <string name="btn_login">LOG IN</string>
+    <string name="txt_sign_in"><u>SIGN UP</u></string>
+    <string name="btn_login">SIGN IN</string>
 
 
     <!--    Forgot password activity-->
@@ -125,6 +125,10 @@
     <string name="txt_add_department">Add Department</string>
     <string name="txt_enter_department_details">Enter department details</string>
     <string name="department_name">Department Name:</string>
+    <string name="txt_doctor">Doctor</string>
+    <string name="txt_clinic_admin">Clinic Administrator</string>
+    <string name="txt_login_as">Login As ..</string>
+    <string name="nav_clinics">Clinics</string>
 
 
 </resources>

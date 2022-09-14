@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@color/root_color">
+    android:background="@color/root_color"
+    android:orientation="vertical">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="26dp"
         android:layout_marginTop="50dp">
+
         <ImageView
             android:id="@+id/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:src="@drawable/back_icon"/>
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/back_icon" />
 
         <TextView
             style="@style/screen_title_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
             android:layout_toEndOf="@id/btn_back"
             android:text="@string/title_settings" />
     </RelativeLayout>
@@ -29,16 +33,18 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/img_settings"/>
+        android:layout_marginTop="70dp"
+        android:src="@drawable/img_settings" />
+
     <TextView
+        style="@style/style_label_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/style_label_text"
-        android:text="@string/txt_language"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="18dp"/>
+        android:layout_marginTop="18dp"
+        android:text="@string/txt_language" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,11 +52,13 @@
         android:layout_marginTop="8dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp">
+
         <LinearLayout
             android:id="@+id/btn_english"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -88,15 +96,17 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/ic_check"
-                    android:layout_marginEnd="20dp"/>
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_check" />
             </RelativeLayout>
+
             <View
                 android:id="@+id/view_line_center"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_toEndOf="@id/iv_english"
                 android:background="#E7F4F9" />
+
             <RelativeLayout
                 android:id="@+id/btn_arabic"
                 android:layout_width="match_parent"
@@ -128,60 +138,68 @@
                     android:text="@string/txt_arabic"
                     android:textColor="#091A20"
                     android:textSize="10sp" />
+
                 <ImageView
                     android:id="@+id/iv_arabic_check"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/ic_check"
                     android:layout_marginEnd="20dp"
-                    android:visibility="gone"/>
+                    android:src="@drawable/ic_check"
+                    android:visibility="gone" />
             </RelativeLayout>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
     <TextView
+        style="@style/style_label_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/style_label_text"
-        android:text="@string/txt_logout"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="18dp"/>
+        android:layout_marginTop="18dp"
+        android:text="@string/txt_logout" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/btn_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
         android:layout_marginHorizontal="37dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
+
                 <View
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@color/skyBlue" />
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_logout"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_logout" />
             </FrameLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_medium"
-                android:textSize="10sp"
-                android:textColor="#091A20"
-                android:text="@string/txt_logout"
+                android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
-                android:layout_gravity="center_vertical"/>
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/txt_logout"
+                android:textColor="#091A20"
+                android:textSize="10sp" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

@@ -12,9 +12,9 @@
         android:icon="@drawable/user_date_calendar_icon"
         android:enabled="true"
         /><item
-    android:id="@+id/btn_notifications"
-    android:title="@string/nav_notifications"
-    android:icon="@drawable/notification_alert_icon"
+    android:id="@+id/btn_clinics"
+    android:title="@string/nav_clinics"
+    android:icon="@drawable/ic_all_clinics"
     android:enabled="true"
     /><item
     android:id="@+id/btn_profile"
