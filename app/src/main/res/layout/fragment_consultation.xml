@@ -127,42 +127,42 @@
         android:text="@string/txt_attach_picture"
         android:textColor="@color/black" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_card2"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp"
-        android:layout_below="@id/tv_dimo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="@dimen/_25sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginBottom="@dimen/_10sdp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_card2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/tv_dimo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Image.png" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Image.png" />
 
-        <FrameLayout
-            android:layout_width="80dp"
-            android:layout_height="45dp"
-            android:elevation="5dp">
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:elevation="5dp">
 
-            <View
-                android:layout_width="30dp"
-                android:layout_height="25dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="10dp"
-                android:background="@color/skyBlue" />
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:background="@color/skyBlue" />
 
-            <ImageView
-                android:layout_width="28dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="9dp"
-                android:src="@drawable/msgicon" />
-        </FrameLayout>
-    </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="9dp"
+                        android:src="@drawable/msgicon" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
 
 
     <TextView

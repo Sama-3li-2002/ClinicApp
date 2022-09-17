@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/root_color"
+    android:orientation="vertical"
     tools:context=".ui.fragments.AllClinicsFragment">
 
     <RelativeLayout
@@ -13,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_25sdp">
+        android:layout_marginTop="@dimen/_25sdp"
+        >
 
         <ImageView
             android:id="@+id/btn_back"
@@ -35,18 +35,26 @@
             android:id="@+id/btn_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_round_search_24"
-            android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
-            />
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_round_search_24" />
+
+        <ImageView
+            android:id="@+id/btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toStartOf="@id/btn_search"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_filter" />
 
         <ImageView
             android:id="@+id/btn_notification"
             android:layout_width="@dimen/_17sdp"
             android:layout_height="@dimen/_17sdp"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="@dimen/_5sdp"
-            android:layout_toStartOf="@id/btn_search"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toStartOf="@id/btn_filter"
             android:src="@drawable/notification_alert_icon" />
 
     </RelativeLayout>
@@ -55,5 +63,5 @@
         android:id="@+id/rv_clincs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"/>
+        android:layout_marginTop="@dimen/_10sdp" />
 </LinearLayout>

@@ -16,6 +16,7 @@ import com.suhail.clinicapp.R;
 import com.suhail.clinicapp.adapters.DepartmentsRvAdapter;
 import com.suhail.clinicapp.adapters.NotificationsRvAdapter;
 import com.suhail.clinicapp.databinding.FragmentDepartmentsBinding;
+import com.suhail.clinicapp.listeners.OnDepartmentClickedListener;
 import com.suhail.clinicapp.models.Department;
 
 import java.util.ArrayList;
@@ -51,17 +52,24 @@ public class DepartmentsFragment extends Fragment {
             }
         });
         List<Department> departments=new ArrayList<>();
-        departments.add(new Department("Heart"));
-        departments.add(new Department("Heart"));
-        departments.add(new Department("Heart"));
-        departments.add(new Department("Heart"));
-        departments.add(new Department("Heart"));
-        departments.add(new Department("Heart"));
-        departments.add(new Department("Heart"));
-        departments.add(new Department("Heart"));
+        departments.add(new Department("Dept1"));
+        departments.add(new Department("Dept2"));
+        departments.add(new Department("Dept3"));
+        departments.add(new Department("Dept4"));
+        departments.add(new Department("Dept5"));
+        departments.add(new Department("Dept6"));
+        departments.add(new Department("Dept7"));
+        departments.add(new Department("Dept8"));
 
         binding.rvDepartments.setLayoutManager(new GridLayoutManager(getActivity(),2));
-        binding.rvDepartments.setAdapter(new DepartmentsRvAdapter(departments,getActivity()));
+        binding.rvDepartments.setAdapter(new DepartmentsRvAdapter(departments, getActivity(), new OnDepartmentClickedListener() {
+            @Override
+            public void onDepartmentClicked(String deptName) {
+                Bundle bundle = new Bundle();
+                bundle.putString("deptName",deptName);
+                activity.navController.navigate(R.id.nav_doctors,bundle);
+            }
+        }));
         return binding.getRoot();
     }
 }

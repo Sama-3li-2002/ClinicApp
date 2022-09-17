@@ -1,5 +1,6 @@
 package com.suhail.clinicapp.adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.suhail.clinicapp.R;
+import com.suhail.clinicapp.listeners.OnDepartmentClickedListener;
 import com.suhail.clinicapp.models.Department;
 
 import java.util.List;
@@ -17,10 +19,12 @@ import java.util.List;
 public class DepartmentsRvAdapter extends RecyclerView.Adapter<DepartmentsRvAdapter.DepartmentViewHolder> {
 List<Department> departments;
 Context context;
+OnDepartmentClickedListener listener;
 
-    public DepartmentsRvAdapter(List<Department> departments, Context context) {
+    public DepartmentsRvAdapter(List<Department> departments, Context context, OnDepartmentClickedListener listener) {
         this.departments = departments;
         this.context = context;
+        this.listener = listener;
     }
 
     @NonNull
@@ -31,8 +35,14 @@ Context context;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull DepartmentViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull DepartmentViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.tv_name.setText(departments.get(position).getName());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onDepartmentClicked(departments.get(position).getName());
+            }
+        });
     }
 
     @Override

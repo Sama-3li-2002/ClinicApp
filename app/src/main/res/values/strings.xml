@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">ClinicApp</string>
+    <string name="app_name">SEHATY</string>
 
 <!--           navigation bottom-->
     <string name="nav_home">Home</string>
@@ -129,6 +129,34 @@
     <string name="txt_clinic_admin">Clinic Administrator</string>
     <string name="txt_login_as">Login As ..</string>
     <string name="nav_clinics">Clinics</string>
+    <string name="txt_doctors_filter">Doctors Filter</string>
+    <string name="txt_center_name">Center Name:</string>
+    <string name="txt_department_name">Department Name:</string>
+    <string name="txt_filter">Filter</string>
+    <string name="txt_welcome">WELCOME</string>
+    <string name="txt_in">IN</string>
+    <string name="txt_about_app">The Application Of The Best Clinics And Their Doctors To Make It Easier You To Book An Appointment</string>
+    <string name="txt_centers">Centers</string>
+    <string name="hint_password">Enter Password</string>
+    <string name="txt_save">save</string>
 
+    <string-array name="centers_names">
+        <item>ACenter</item>
+        <item>BCenter</item>
+        <item>CCenter</item>
+        <item>DCenter</item>
+    </string-array>
 
+    <string-array name="clinics_names">
+        <item>Dental Clinic</item>
+        <item>Ortho Clinic</item>
+        <item>AH Clinic</item>
+        <item>DC Clinic</item>
+    </string-array>
+
+    <string-array name="departments_names">
+        <item>Cardio</item>
+        <item>Ortho</item>
+        <item>Dental</item>
+    </string-array>
 </resources>

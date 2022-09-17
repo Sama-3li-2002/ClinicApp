@@ -16,27 +16,29 @@ import com.suhail.clinicapp.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
     private AppBarConfiguration configuration;
-    public NavController navController;
+    public static NavController navController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding=ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         initNavigation();
     }
 
-    private void initNavigation(){
-        configuration= new AppBarConfiguration.Builder(
-                R.id.nav_home,R.id.nav_appotiments,R.id.nav_all_clinic,R.id.nav_profile
+
+    private void initNavigation() {
+        configuration = new AppBarConfiguration.Builder(
+                R.id.nav_home, R.id.nav_appotiments, R.id.nav_all_clinic, R.id.nav_profile,
+                R.id.nav_booking, R.id.nav_notifications, R.id.nav_settings, R.id.nav_map,
+                R.id.nav_empty_data, R.id.nav_doctors, R.id.nav_departments, R.id.nav_doctor_details
         ).build();
-        navController= Navigation.findNavController(this,R.id.nav_host_name);
-        NavigationUI.setupWithNavController(binding.bottomNav,navController);
+        navController = Navigation.findNavController(this, R.id.nav_host_name);
+        NavigationUI.setupWithNavController(binding.bottomNav, navController);
         binding.bottomNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.btn_home:
                         navController.navigate(R.id.nav_home);
                         break;
@@ -53,5 +55,11 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        navController.navigate(R.id.nav_home);
+        binding.bottomNav.setSelectedItemId(R.id.btn_home);
     }
 }

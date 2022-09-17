@@ -1,4 +1,4 @@
-package com.suhail.clinicapp.ui.fragments;
+package com.suhail.clinicapp.ui.activities;
 
 import android.os.Bundle;
 

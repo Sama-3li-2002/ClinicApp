@@ -52,7 +52,9 @@ public class HomeFragment extends Fragment {
 
         binding.btnNotification.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {activity.navController.navigate(R.id.nav_notifications);}
+            public void onClick(View v) {
+                activity.navController.navigate(R.id.nav_notifications);
+            }
         });
 
         binding.tvViewAllClinic.setOnClickListener(new View.OnClickListener() {
@@ -81,40 +83,6 @@ public class HomeFragment extends Fragment {
         binding.rvClinics.setLayoutManager(layoutManager);
         binding.rvClinics.setHasFixedSize(true);
         binding.rvClinics.setAdapter(adapter);
-
-
-        //START view pager2 with image slider -- services
-        ArrayList<ClinicService> clinicService = new ArrayList<>();
-
-        clinicService.add(new ClinicService(R.drawable.consultation_service,getResources().getString(R.string.txt_consultation)));
-        clinicService.add(new ClinicService(R.drawable.bestdoctors_service,getResources().getString(R.string.txt_best_doctor)));
-        clinicService.add(new ClinicService(R.drawable.appointment_booking_service,getResources().getString(R.string.txt_appointment_booking)));
-        clinicService.add(new ClinicService(R.drawable.consultation_service,getResources().getString(R.string.txt_consultation)));
-
-         binding.viewPager2.setAdapter(new ClinicPagerAdapter(getActivity(),clinicService, binding.viewPager2));
-//          worm Dots Indicator for Viewpager
-         binding.wormDotsIndicator.attachTo(binding.viewPager2);
-
-
-         binding.viewPager2.setOffscreenPageLimit(3);
-//        setOffscreenPageLimit ---To set the number of pages that should be retained to either side of the currently visible page(s).
-         binding.viewPager2.setClipChildren(false);
-//         clipChildren --the FrameLayout that is at the root of the ViewPager needs to have clipping disabled.
-         binding.viewPager2.setClipToPadding(false);
-         binding.viewPager2.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
-        CompositePageTransformer transformer = new CompositePageTransformer();
-//        CompositePageTransformer --- Allows for combining multiple PageTransformer objects.
-        transformer.addTransformer(new MarginPageTransformer(0));
-        transformer.addTransformer(new ViewPager2.PageTransformer() {
-            @Override
-            public void transformPage(@NonNull View page, float position) {
-//                 transformPage --- Allows for combining multiple PageTransformer objects.
-                float r = 1- Math.abs(position);
-                page.setScaleY(0.58f + r *0.14f);
-            }
-        });
-        binding.viewPager2.setPageTransformer(transformer);
-        //END view pager
 
 //button see all to open all clinics fragment
         binding.tvViewAllClinic.setOnClickListener(new View.OnClickListener() {

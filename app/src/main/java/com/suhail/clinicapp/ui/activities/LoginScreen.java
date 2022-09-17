@@ -10,7 +10,6 @@ import android.widget.Toast;
 import com.suhail.clinicapp.MainActivity;
 import com.suhail.clinicapp.R;
 import com.suhail.clinicapp.databinding.ActivityLoginScreenBinding;
-import com.suhail.clinicapp.ui.fragments.AdminSectionsActivity;
 
 public class LoginScreen extends AppCompatActivity {
     ActivityLoginScreenBinding binding;

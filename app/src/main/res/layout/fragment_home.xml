@@ -1,161 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/root_color">
+    >
 
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:foreground="#99091A20"
+        android:scaleType="centerCrop"
+        android:src="@drawable/happy_patient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
         android:id="@+id/rl_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_8sdp"
-        android:layout_marginTop="@dimen/_25sdp">
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/btn_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:padding="@dimen/_10sdp"
-            android:src="@drawable/back_icon" />
 
         <TextView
-            style="@style/screen_title_style"
+            style="@style/screen_title_style_white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-
-            android:layout_toEndOf="@id/btn_back"
             android:text="@string/title_home" />
 
         <ImageView
             android:id="@+id/btn_notification"
-            android:layout_width="@dimen/_17sdp"
-            android:layout_height="@dimen/_17sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/notification_alert_icon" />
+            android:src="@drawable/ic_notification_white" />
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toStartOf="@id/btn_notification"
+            android:src="@drawable/ic_search_white" />
 
     </RelativeLayout>
 
-    <androidx.core.widget.NestedScrollView
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_home"
+        >
+
+        <TextView
+            style="@style/style_big_title_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_welcome" />
+
+        <TextView
+            style="@style/style_big_title_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_in"
+            android:textColor="#83DBFB" />
+
+        <TextView
+            style="@style/style_big_title_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/txt_about_app"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/rl_home">
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/shpae_home_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_title"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp">
 
             <TextView
-                android:id="@+id/tv_service"
-                style="@style/style_label_text"
+                style="@style/style_big_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_19sdp"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:text="@string/txt_our_service" />
-
-            <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/view_pager2"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_180sdp"
-                android:layout_below="@id/tv_service"
-                android:paddingStart="@dimen/_40sdp"
-                android:paddingEnd="@dimen/_40sdp" />
-
-            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
-                android:id="@+id/worm_dots_indicator"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/view_pager2"
-                app:dotsColor="@color/skyBlue"
-                app:dotsCornerRadius="8dp"
-                app:dotsSize="10dp"
-                app:dotsSpacing="2dp"
-                app:dotsStrokeColor="@color/skyBlue"
-                app:dotsStrokeWidth="1dp" />
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="@string/txt_centers" />
 
             <TextView
-                android:id="@+id/tv_about"
-                style="@style/style_label_text"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/_22sdp"
-                android:layout_below="@id/worm_dots_indicator"
-                android:layout_marginStart="@dimen/_19sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:text="@string/txt_about_us" />
-
-            <TextView
-                android:id="@+id/tv_about_us"
+                android:id="@+id/tv_view_all_clinic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_about"
-                android:layout_marginStart="@dimen/_19sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:fontFamily="@font/roboto_regular"
-                android:text="Excepteur sint occaecat cupidatat nonsit proident,
-sunt in culpa qui officia deserunt mollit anim said
-eopksio laborum. sed ut perspiciatis unde oimnis
-istpoe natus error sit voluptatem sit accusantium
-doloremque eopsloi si laudantium,sit totam rem
-aperiam, eaque ipsa quae ab inventore veritaie et
-quasi architecto beatae vitaet "
-                android:textColor="#042D3B"
-                android:textSize="14sp" />
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/txt_view_all"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/_19sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:orientation="horizontal">
+        </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_clinics"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp" />
+    </LinearLayout>
 
-                <TextView
-                    android:id="@+id/tv_clincs"
-                    style="@style/style_label_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_22sdp"
-                    android:layout_below="@id/tv_about_us"
-                    android:layout_weight="8"
-                    android:text="@string/txt_clinics" />
-
-                <TextView
-                    android:id="@+id/tv_view_all_clinic"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_15sdp"
-                    android:layout_below="@+id/tv_about_us"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="@dimen/_19sdp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="@string/txt_view_all"
-                    android:textColor="@color/red"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_clinics"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@id/tv_clincs"
-                android:layout_marginTop="@dimen/_5sdp" />
-
-        </LinearLayout>
-
-    </androidx.core.widget.NestedScrollView>
-
-
-    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-    <!--        android:layout_width="60dp"-->
-    <!--        android:layout_height="60dp"-->
-    <!--        android:src="@drawable/ic_plus"-->
-    <!--        android:layout_alignParentBottom="true"-->
-    <!--        android:layout_alignParentEnd="true"-->
-    <!--        android:layout_margin="10dp"-->
-    <!--        android:backgroundTint="#1C95C0"/>-->
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
