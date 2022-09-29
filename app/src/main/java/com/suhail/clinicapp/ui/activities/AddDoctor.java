@@ -5,17 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.suhail.clinicapp.R;
-import com.suhail.clinicapp.databinding.ActivityAddClinicBinding;
-import com.suhail.clinicapp.databinding.ActivityForgetPasswordScreenBinding;
+import com.suhail.clinicapp.databinding.ActivityAddDoctorBinding;
 
-public class AddClinic extends AppCompatActivity {
+public class AddDoctor extends AppCompatActivity {
 
-    ActivityAddClinicBinding binding;
+    ActivityAddDoctorBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding= ActivityAddClinicBinding.inflate(getLayoutInflater());
+        binding= ActivityAddDoctorBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         binding.cvAddClinic.setBackgroundResource(R.drawable.custom_card_shape);
         binding.cvAddClinic.setCardBackgroundColor(getResources().getColor(R.color.white));

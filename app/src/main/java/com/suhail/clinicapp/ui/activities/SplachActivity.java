@@ -19,7 +19,7 @@ ActivitySplachBinding binding;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplachActivity.this, LoginScreen.class));
+                startActivity(new Intent(SplachActivity.this, TypeUsersActivity.class));
                 finish();
             }
         }, 1500);

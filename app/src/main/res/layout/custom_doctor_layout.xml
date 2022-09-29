@@ -19,7 +19,7 @@
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"
     app:cardCornerRadius="8dp"
-    app:cardElevation="10dp"
+    app:cardElevation="@dimen/_5sdp"
     android:layout_marginHorizontal="16dp"
     android:layout_marginVertical="10dp"
     app:layout_constraintEnd_toEndOf="parent"
@@ -62,6 +62,7 @@
 
             <androidx.appcompat.widget.AppCompatRatingBar
                 style="@style/Widget.AppCompat.RatingBar"
+                android:id="@+id/rb"
                 android:progressTint="@color/yellow2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -74,7 +75,8 @@
                 android:stepSize="1.0"
                 android:transformPivotX="0dp"
                 android:transformPivotY="0dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                />
 
         </LinearLayout>
 

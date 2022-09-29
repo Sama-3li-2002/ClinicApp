@@ -33,10 +33,10 @@ public class LoginScreen extends AppCompatActivity {
             public void onClick(View v) {
                 switch (usertype){
                     case 1:
-                        startActivity(new Intent(LoginScreen.this, MainActivity.class));
+                        startActivity(new Intent(LoginScreen.this, MainActivity.class).putExtra("userType",usertype));
                         break;
                     case 2:
-                        startActivity(new Intent(LoginScreen.this, AdminSectionsActivity.class));
+                        startActivity(new Intent(LoginScreen.this, MainActivity.class).putExtra("userType",usertype));
                         break;
                     case 3:
                         Toast.makeText(LoginScreen.this, "In Progress..", Toast.LENGTH_SHORT).show();

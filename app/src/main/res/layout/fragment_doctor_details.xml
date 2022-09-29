@@ -275,6 +275,19 @@
                 android:layout_marginBottom="@dimen/_15sdp"
                 android:text="@string/btn_book_appointment" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_patient_list"
+                style="@style/style_btn_clicked"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="@string/txt_patient_list"
+                android:visibility="gone"
+                android:drawableStart="@drawable/ic_patient_list"
+                />
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

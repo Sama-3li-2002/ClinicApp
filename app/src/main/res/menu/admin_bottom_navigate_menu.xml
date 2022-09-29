@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/btn_doctors"
+    android:title="@string/txt_doctors"
+    android:icon="@drawable/ic_doctor"
+    android:enabled="true"/>
+    <item android:id="@+id/btn_departments"
+    android:title="@string/txt_departments"
+    android:icon="@drawable/ic_department"
+    android:enabled="true"/>
+    <item android:id="@+id/btn_archive"
+    android:title="@string/txt_archive"
+    android:icon="@drawable/ic_archive"
+    android:enabled="true"/>
+</menu>

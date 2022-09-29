@@ -1,5 +1,6 @@
 package com.suhail.clinicapp.ui.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +9,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.suhail.clinicapp.MainActivity;
@@ -16,8 +16,8 @@ import com.suhail.clinicapp.R;
 import com.suhail.clinicapp.adapters.DoctorsRvAdapter;
 import com.suhail.clinicapp.databinding.FragmentClinicDoctorsBinding;
 import com.suhail.clinicapp.listeners.OnDoctorSelectedListener;
-import com.suhail.clinicapp.models.Doctor;
 import com.suhail.clinicapp.models.DoctorDetails;
+import com.suhail.clinicapp.ui.activities.AddDoctor;
 import com.suhail.clinicapp.viewModel.CustomDoctorLayoutViewModel;
 import com.suhail.clinicapp.viewModel.DoctorViewModel;
 
@@ -41,7 +41,11 @@ public class DoctorsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         FragmentClinicDoctorsBinding binding = FragmentClinicDoctorsBinding.inflate(getLayoutInflater());
 
-
+        if(MainActivity.userType == MainActivity.ADMIN_KEY)
+        {
+         binding.btnMap.setVisibility(View.GONE);
+         binding.btnAdd.setVisibility(View.VISIBLE);
+        }
 
         if(deptName != null)
         binding.tvDepartmentName.setText(deptName);
@@ -65,6 +69,13 @@ public class DoctorsFragment extends Fragment {
                 activity.navController.navigate(R.id.nav_doctor_details);
             }
         }));
+
+        binding.btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), AddDoctor.class));
+            }
+        });
 
         return binding.getRoot();
     }

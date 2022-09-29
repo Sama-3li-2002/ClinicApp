@@ -9,7 +9,6 @@
         type="com.suhail.clinicapp.viewModel.DoctorViewModel" />
 </data>
 
-
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,7 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="@dimen/_20sdp"
+       >
 
         <ImageView
             android:id="@+id/btn_back"
@@ -38,17 +38,29 @@
             android:layout_toEndOf="@id/btn_back"
             android:text="Orthodontic" />
         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btn_add"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+        <ImageView
             android:id="@+id/btn_map"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_map"
+            android:layout_toStartOf="@id/btn_add"
+            android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"/>
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_round_search_24"
+            android:layout_marginEnd="@dimen/_8sdp"
             android:layout_toStartOf="@id/btn_map"
-            android:layout_marginEnd="15dp"/>
+            android:src="@drawable/ic_round_search_24"
+            android:layout_centerVertical="true"/>
 
     </RelativeLayout>
     <androidx.recyclerview.widget.RecyclerView

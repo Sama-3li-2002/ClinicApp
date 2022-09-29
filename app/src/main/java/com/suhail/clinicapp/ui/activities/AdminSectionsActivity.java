@@ -1,6 +1,8 @@
 package com.suhail.clinicapp.ui.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +16,12 @@ ActivityAdminSectionsBinding binding;
         super.onCreate(savedInstanceState);
         binding = ActivityAdminSectionsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        binding.btnDoctors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
 
     }
 }

@@ -19,13 +19,11 @@ import android.view.ViewGroup;
 
 import com.suhail.clinicapp.MainActivity;
 import com.suhail.clinicapp.R;
-import com.suhail.clinicapp.adapters.ClinicPagerAdapter;
 import com.suhail.clinicapp.adapters.ClinicRvAdapter;
 
 import com.suhail.clinicapp.databinding.FragmentHomeBinding;
 import com.suhail.clinicapp.listeners.OnClinicClickedListener;
 import com.suhail.clinicapp.models.Clinic;
-import com.suhail.clinicapp.models.ClinicService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -76,7 +74,7 @@ public class HomeFragment extends Fragment {
             public void onClinicClicked(String clinicName) {
                 Bundle bundle=new Bundle();
                 bundle.putString("clinicName",clinicName);
-                activity.navController.navigate(R.id.nav_departments,bundle);
+                MainActivity.navController.navigate(R.id.nav_departments,bundle);
             }
         });
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
