@@ -273,19 +273,24 @@
                 android:layout_marginHorizontal="@dimen/_30sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginBottom="@dimen/_15sdp"
-                android:text="@string/btn_book_appointment" />
+                android:text="@string/btn_book_appointment"
+                android:visibility="visible"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_patient_list"
                 style="@style/style_btn_clicked"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginHorizontal="@dimen/_30sdp"
-                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_15sdp"
                 android:text="@string/txt_patient_list"
+                android:gravity="center"
                 android:visibility="gone"
                 android:drawableStart="@drawable/ic_patient_list"
+                android:paddingHorizontal="@dimen/_50sdp"
+                android:drawablePadding="@dimen/_15sdp"
                 />
 
         </LinearLayout>

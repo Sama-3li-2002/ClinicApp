@@ -1,5 +1,6 @@
 package com.suhail.clinicapp.ui.fragments;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -36,6 +37,7 @@ public class DoctorsFragment extends Fragment {
         }
     }
 
+    @SuppressLint("SuspiciousIndentation")
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -47,6 +49,13 @@ public class DoctorsFragment extends Fragment {
          binding.btnAdd.setVisibility(View.VISIBLE);
         }
 
+
+        binding.btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
+        });
         if(deptName != null)
         binding.tvDepartmentName.setText(deptName);
 

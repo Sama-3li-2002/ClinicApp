@@ -29,7 +29,12 @@ public class BookingFragment2 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         FragmentBooking2Binding binding = FragmentBooking2Binding.inflate(getLayoutInflater());
 
-
+        binding.btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
+        });
         //handle button morning click event
         binding.btnMorning.setOnClickListener(new View.OnClickListener() {
             @Override

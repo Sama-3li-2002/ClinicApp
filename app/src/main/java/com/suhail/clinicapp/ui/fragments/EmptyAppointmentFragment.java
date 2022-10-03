@@ -37,6 +37,12 @@ public class EmptyAppointmentFragment extends Fragment {
             @Override
             public void onClick(View v) {activity.navController.navigate(R.id.nav_notifications);}
         });
+        binding.btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
+        });
 
         return binding.getRoot();
     }

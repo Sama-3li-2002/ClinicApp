@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
@@ -37,7 +38,29 @@ public class DepartmentsFragment extends Fragment {
         FragmentDepartmentsBinding binding=FragmentDepartmentsBinding.inflate(getLayoutInflater());
         if(getArguments()!=null){
             binding.tvClinicName.setText(getArguments().getString("clinicName"));
+
         }
+
+        if(MainActivity.userType == MainActivity.ADMIN_KEY)
+        {
+            binding.btnMap.setVisibility(View.GONE);
+            binding.btnAdd.setVisibility(View.VISIBLE);
+        }
+
+        binding.btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
+        });
+        binding.btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fm = activity.getSupportFragmentManager();
+                AddDeparmentFragment addDeparmentFragment = new AddDeparmentFragment();
+                addDeparmentFragment.show(fm, "fragment_add_department");
+            }
+        });
 
         binding.btnBack.setOnClickListener(new View.OnClickListener() {
             @Override

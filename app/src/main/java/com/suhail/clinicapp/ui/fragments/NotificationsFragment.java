@@ -33,6 +33,14 @@ public class NotificationsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         FragmentNotificationsBinding binding=FragmentNotificationsBinding.inflate(getLayoutInflater());
+
+        binding.btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
+        });
+
         List<Notification> notifications = new ArrayList<>();
         notifications.add(new Notification(24,"wednesday","wed 24 Aug","1:30pm"));
         notifications.add(new Notification(24,"wednesday","wed 24 Aug","1:30pm"));

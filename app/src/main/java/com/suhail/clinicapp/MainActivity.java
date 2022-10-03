@@ -86,16 +86,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        if(userType == 1){
-        navController.navigate(R.id.nav_home);
-        binding.bottomNav.setSelectedItemId(R.id.btn_home);
-    }
-    else if(userType == 2)
-        {
-            navController.navigate(R.id.nav_doctors);
-            binding.bottomNav.setSelectedItemId(R.id.btn_doctors);
-        }
-    }
+
 }

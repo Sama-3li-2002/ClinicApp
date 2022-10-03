@@ -42,9 +42,19 @@ public class DoctorDetailsFragment extends Fragment {
             binding.btnBookAppointment.setVisibility(View.GONE);
             binding.btnPatientList.setVisibility(View.VISIBLE);
         }
+        binding.btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
+        });
+
+
+
         doctorViewModel.getDoctorONeDetails();
         binding.setViewModel(doctorViewModel);
         binding.setLifecycleOwner(this);
+
 
 
             doctorViewModel.mutableLiveData.observe(getActivity(), new Observer<DoctorDetails>() {

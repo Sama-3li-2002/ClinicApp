@@ -36,6 +36,9 @@ public class AppoitmentsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         FragmentAppoitmentsBinding binding=FragmentAppoitmentsBinding.inflate(getLayoutInflater());
+
+
+
         List<Appoitment> appoitments=new ArrayList<>();
         appoitments.add(new Appoitment(24,"wednesday","wed 24 Aug","1:30pm"));
         appoitments.add(new Appoitment(24,"wednesday","wed 24 Aug","1:30pm"));

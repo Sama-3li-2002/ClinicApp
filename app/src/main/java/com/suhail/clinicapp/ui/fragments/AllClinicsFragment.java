@@ -48,9 +48,20 @@ public class AllClinicsFragment extends Fragment {
         // Inflate the layout for this fragment
         FragmentAllClinicsBinding binding =FragmentAllClinicsBinding.inflate(getLayoutInflater());
 
+        if(MainActivity.userType == MainActivity.ADMIN_KEY){
+            binding.btnNotification.setVisibility(View.GONE);
+        }
+
         binding.btnNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {activity.navController.navigate(R.id.nav_notifications);}
+        });
+
+        binding.btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
         });
 
         List<Clinic> clinics = new ArrayList<>();
@@ -75,13 +86,6 @@ public class AllClinicsFragment extends Fragment {
         binding.rvClincs.setHasFixedSize(true);
         binding.rvClincs.setAdapter(adapter);
 
-
-        binding.btnNotification.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                activity.navController.navigate(R.id.nav_doctor_details);
-            }
-        });
 
         binding.btnFilter.setOnClickListener(new View.OnClickListener() {
             @Override

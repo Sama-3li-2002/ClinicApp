@@ -18,5 +18,6 @@ public class AddDoctor extends AppCompatActivity {
         setContentView(binding.getRoot());
         binding.cvAddClinic.setBackgroundResource(R.drawable.custom_card_shape);
         binding.cvAddClinic.setCardBackgroundColor(getResources().getColor(R.color.white));
+        binding.cvLegalPaper.setBackgroundResource(R.drawable.custom_card_shape);
     }
 }
