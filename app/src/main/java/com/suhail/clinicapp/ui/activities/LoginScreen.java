@@ -39,7 +39,7 @@ public class LoginScreen extends AppCompatActivity {
                         startActivity(new Intent(LoginScreen.this, MainActivity.class).putExtra("userType",usertype));
                         break;
                     case 3:
-                        Toast.makeText(LoginScreen.this, "In Progress..", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LoginScreen.this, MainActivity.class).putExtra("userType",usertype));
                 }
 
             }

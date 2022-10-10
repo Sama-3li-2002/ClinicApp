@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_navigation"
@@ -64,5 +65,21 @@
         android:name="com.suhail.clinicapp.ui.fragments.DoctorsFragment"
         tools:layout="@layout/fragment_clinic_doctors"
         android:label="Doctors" />
+
+    <fragment android:id="@+id/nav_patient_list"
+        android:name="com.suhail.clinicapp.ui.fragments.PatientListFragment"
+        tools:layout="@layout/fragment_patient_list"
+        android:label="Patient List"/>
+
+    <fragment android:id="@+id/nav_medicat_diagnosis"
+        android:name="com.suhail.clinicapp.ui.fragments.MedicalDiagnosisFragment"
+        tools:layout="@layout/fragment_medical_diagnosis"
+        android:label="@string/medical_diagnosis"/>
+
+    <fragment android:id="@+id/nav_doctor_appointment"
+        android:name="com.suhail.clinicapp.ui.fragments.AppointmentsDoctorFragment"
+        tools:layout="@layout/fragment_doctor_appointment"
+        android:label="@string/appointmentDoctor"/>
+"
 
 </navigation>

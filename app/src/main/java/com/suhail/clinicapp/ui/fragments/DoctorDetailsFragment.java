@@ -81,6 +81,8 @@ public class DoctorDetailsFragment extends Fragment {
                 @Override
                 public void onClick(View v) {
                     Toast.makeText(activity, "Patient List", Toast.LENGTH_SHORT).show();
+                    activity.navController.navigate(R.id.nav_patient_list);
+
                 }
             });
         return binding.getRoot();

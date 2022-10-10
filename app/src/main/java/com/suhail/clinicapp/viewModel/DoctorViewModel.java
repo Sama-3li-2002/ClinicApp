@@ -16,15 +16,9 @@ import java.util.ArrayList;
 public class DoctorViewModel extends ViewModel {
 
     public static DoctorDetails details ;
-
-
-
     public MutableLiveData<DoctorDetails> mutableLiveData = new MutableLiveData<>();
 
-// public void getDoctor(){
-//     DoctorDetails doctor = getFromDatabase();
-//     mutableLiveData.setValue(doctor);
-// }
+
   public void getDoctorONeDetails(){
       DoctorDetails doctor1 = getFromDatabase();
       mutableLiveData.setValue(doctor1);
@@ -34,9 +28,6 @@ public class DoctorViewModel extends ViewModel {
     public DoctorDetails getFromDatabase(){
         DoctorDetails doctor1 = details;
 
-//        doctor1.setName("Ahmed Mohammed");
-//        doctor1.setSpecialty("Cardio");
-//        doctor1.setDoctorImage(R.drawable.doctor);
         doctor1.setAbout("Excepteur sint occaecat cupidatat nonsit proident, \n" +
                 "sunt in culpa qui officia deserunt mollit anim said  \n" +
                 "eopksio laborum. sed ut perspiciatis unde oimnis \n" +
@@ -44,7 +35,7 @@ public class DoctorViewModel extends ViewModel {
                 "doloremque eopsloi si laudantium,sit totam rem \n" +
                 "aperiam, eaque ipsa quae ab inventore veritaie et \n" +
                 "quasi architecto beatae vitaet ");
-//        doctor1.setRate(3);
+
         doctor1.setPatientsCont(100);
         doctor1.setExperienceYears(5);
 

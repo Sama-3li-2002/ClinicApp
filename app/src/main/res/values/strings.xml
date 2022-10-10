@@ -159,4 +159,16 @@
         <item>Ortho</item>
         <item>Dental</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_review">Review</string>
+    <string name="treatment">Treatment</string>
+    <string name="medical_diagnosis">Medical Diagnosis</string>
+    <string name="txt_patient_name">Patient Name:</string>
+    <string name="doctors_name">Doctor Name:</string>
+    <string name="txt_appointment_details">Appointement Details</string>
+    <string name="review">review</string>
+    <string name="txt_new">new</string>
+    <string name="title_my_appintment">my appointments</string>
+    <string name="appointmentDoctor">appointmentDoctor</string>
 </resources>

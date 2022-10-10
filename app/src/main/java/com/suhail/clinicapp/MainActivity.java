@@ -9,6 +9,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.navigation.NavigationBarView;
 import com.suhail.clinicapp.databinding.ActivityMainBinding;
@@ -40,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         ).build();
         navController = Navigation.findNavController(this, R.id.nav_host_name);
         NavigationUI.setupWithNavController(binding.bottomNav, navController);
+
+
         if(userType == 1){
         binding.bottomNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -83,6 +86,10 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
             });
+        }else if(userType==3){
+        binding.bottomNav.getMenu().clear();
+        binding.bottomNav.setVisibility(View.GONE);
+        navController.navigate(R.id.nav_doctor_appointment);
         }
     }
 
