@@ -39,15 +39,6 @@
                 android:src="@drawable/ic_notification_small"
                 android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:layout_toStartOf="@id/btn_map"
-                android:src="@drawable/ic_round_search_24" />
-
         </RelativeLayout>
 
 
