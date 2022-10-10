@@ -33,8 +33,6 @@ public class AppointmentsDoctorFragment extends Fragment {
         // Required empty public constructor
     }
 
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,8 +60,6 @@ public class AppointmentsDoctorFragment extends Fragment {
                 }));
             }
         });
-
-
         binding.btnNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

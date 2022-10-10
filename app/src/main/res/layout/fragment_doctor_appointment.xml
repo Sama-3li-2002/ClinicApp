@@ -64,7 +64,7 @@
                     style="@style/style_btn_clicked"
                     android:layout_width="@dimen/_100sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_9sdp"
                     android:layout_weight="1"
                     android:text="@string/review"
                     android:textAllCaps="false"/>
