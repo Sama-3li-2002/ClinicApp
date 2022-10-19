@@ -54,6 +54,9 @@ public class MedicalDiagnosisFragment extends Fragment {
             }
         });
 
+        if(MainActivity.userType == 3){
+            binding.btnChat.setVisibility(View.VISIBLE);
+        }
 
 
         medicalDiagnosisViewModel.getPatientOneDetails().observe(getActivity(), new Observer<PatientDetails>() {

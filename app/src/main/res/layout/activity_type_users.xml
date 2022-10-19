@@ -1,45 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/root_color"
-    tools:context=".ui.activities.TypeUsersActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:layout_marginBottom="@dimen/_20sdp"
-        android:text="@string/txt_login_as"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tv_title">
+        android:orientation="vertical"
+        android:background="@color/root_color"
+        tools:context=".ui.activities.TypeUsersActivity">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:text="@string/txt_login_as"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_below="@id/tv_title">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_patient"
-                android:layout_width="wrap_content"
-                android:layout_height="180dp"
-                android:layout_margin="18dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="8dp"
-                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_patient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:layout_margin="18dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    >
 
 
                     <ImageView
@@ -61,15 +66,15 @@
                         android:textSize="30sp" />
 
 
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_client"
-                android:layout_width="wrap_content"
-                android:layout_height="180dp"
-                android:layout_margin="18dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="8dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_client"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:layout_margin="18dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp">
 
 
                     <ImageView
@@ -91,15 +96,15 @@
                         android:textSize="30sp" />
 
 
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_doctor"
-                android:layout_width="wrap_content"
-                android:layout_height="180dp"
-                android:layout_margin="18dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="8dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:layout_margin="18dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp">
 
 
 
@@ -121,8 +126,9 @@
                         android:textColor="@color/white"
                         android:textSize="30sp" />
 
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-    </ScrollView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
 
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

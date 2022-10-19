@@ -48,8 +48,7 @@ android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
                     style="@style/style_editText_card"
                     android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    >
+                    android:layout_marginEnd="@dimen/_15sdp">
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"

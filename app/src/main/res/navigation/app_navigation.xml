@@ -80,6 +80,11 @@
         android:name="com.suhail.clinicapp.ui.fragments.AppointmentsDoctorFragment"
         tools:layout="@layout/fragment_doctor_appointment"
         android:label="@string/appointmentDoctor"/>
-"
+
+    <fragment android:id="@+id/nav_doctor_profile"
+        android:name="com.suhail.clinicapp.ui.fragments.DoctorProfileFragment"
+        tools:layout="@layout/fragment_doctor_profile"
+        android:label="txt_doctor_profile"/>
+
 
 </navigation>

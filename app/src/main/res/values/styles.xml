@@ -92,8 +92,8 @@
     <style name="inner_Card_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/_40sdp</item>
-        <item name="cardElevation">@dimen/_5sdp</item>
-        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="cardElevation">@dimen/_3sdp</item>
+        <item name="android:padding">@dimen/_15sdp</item>
         <item name="cardCornerRadius">@dimen/_5sdp</item>
         <item name="android:backgroundTint">@color/gray</item>
     </style>
@@ -103,6 +103,8 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@drawable/shape_edit_text</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="android:layout_marginStart">@dimen/_5sdp</item>
         <item name="android:padding">@dimen/_5sdp</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
         <item name="android:textSize">15sp</item>

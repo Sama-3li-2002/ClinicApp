@@ -86,12 +86,29 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
             });
-        }else if(userType==3){
+        }
+    else if(userType==3){
         binding.bottomNav.getMenu().clear();
-        binding.bottomNav.setVisibility(View.GONE);
+        binding.bottomNav.inflateMenu(R.menu.doctor_bottom_navigation_menu);
         navController.navigate(R.id.nav_doctor_appointment);
+
+        binding.bottomNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.doctor_home:
+                        navController.navigate(R.id.nav_doctor_appointment);
+                        break;
+                    case R.id.doctor_profile:
+                        navController.navigate(R.id.nav_doctor_profile);
+                        break;
+                    case R.id.doctor_setting:
+                        navController.navigate(R.id.nav_settings);
+                        break;
+                }
+                return true;
+            }
+        });
         }
     }
-
-
 }

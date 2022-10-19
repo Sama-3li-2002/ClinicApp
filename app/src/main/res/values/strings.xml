@@ -171,4 +171,7 @@
     <string name="txt_new">new</string>
     <string name="title_my_appintment">my appointments</string>
     <string name="appointmentDoctor">appointmentDoctor</string>
+    <string name="txt_age">Age:</string>
+    <string name="txt_specialization_department">Specialization Department:</string>
+    <string name="nav_setting">setting</string>
 </resources>

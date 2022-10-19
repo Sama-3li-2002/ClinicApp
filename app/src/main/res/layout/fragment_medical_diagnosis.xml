@@ -18,7 +18,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_15sdp">
 
                 <ImageView
@@ -30,11 +30,10 @@
                     android:src="@drawable/back_icon" />
 
                 <TextView
-                    android:id="@+id/tv_department_name"
+                    android:id="@+id/tv_title"
                     style="@style/screen_title_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:layout_centerVertical="true"
                     android:layout_marginStart="@dimen/_5sdp"
                     android:layout_toEndOf="@id/btn_back"
@@ -42,12 +41,25 @@
 
                 <ImageView
                     android:id="@+id/btn_notification"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_35sdp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginEnd="0dp"
-                    android:src="@drawable/ic_notification_small" />
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/notification_alert_icon" />
+
+
+
+                <ImageView
+                    android:id="@+id/btn_chat"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:src="@drawable/ic_chat"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+
 
             </RelativeLayout>
 
@@ -112,9 +124,7 @@
 
 
             </androidx.cardview.widget.CardView>
-
-
-            <GridLayout
+             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:rowCount="2"
@@ -150,16 +160,14 @@
                     android:layout_margin="@dimen/_5sdp"/>
 
             </GridLayout>
-
-            <TextView
+             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_appointment_details"
                 style="@style/style_label_text"
                 android:layout_marginHorizontal="@dimen/_17sdp"
                 android:layout_marginTop="@dimen/_10sdp"/>
-
-            <TextView
+             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_17sdp"
@@ -168,24 +176,19 @@
                 android:fontFamily="@font/roboto_regular"
                 android:textSize="15sp"
                 android:textColor="@color/navyBlue"/>
-
-            <TextView
+             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/treatment"
                 style="@style/style_label_text"
                 android:layout_marginStart="@dimen/_17sdp"
                 android:layout_marginTop="@dimen/_10sdp"/>
-
-
-                <androidx.recyclerview.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_treatment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginHorizontal="@dimen/_15sdp"/>
-
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -193,8 +196,7 @@
                 style="@style/style_label_text"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginStart="@dimen/_17sdp"/>
-
-                <androidx.recyclerview.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_review"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
